@@ -1,0 +1,190 @@
+/**
+ * OFOQ DESIGN SYSTEM TOKENS
+ * THE HORIZON ENGINE — محرك الأفق
+ * Precision Software Engineering Identity
+ */
+
+:root {
+  /* ============================================================
+     1. COLOR SYSTEM (Cyber-Obsidian & Engineering Core)
+     ============================================================ */
+
+  /* Canvas & Obsidian Surfaces */
+  --bg-canvas: #070b16;             /* Base canvas deep obsidian */
+  --bg-deep: #050811;               /* Sub-level deep obsidian */
+  --bg-elevated: #0d1424;           /* Elevated surface */
+  --bg-panel: #121a2e;              /* Core panel */
+  --bg-panel-2: #182238;            /* Hover/secondary surface */
+  --bg-glass: rgba(14, 22, 40, 0.72);
+  --bg-glass-elevated: rgba(20, 31, 56, 0.82);
+  --bg-glass-subtle: rgba(18, 26, 46, 0.4);
+
+  /* Official Brand Emerald (#1C5D4E) & Accessible Variations */
+  --emerald-raw: #1c5d4e;           /* Trademark official emerald */
+  --emerald-deep: #123d33;          /* Dark structure emerald */
+  --emerald-surface: rgba(28, 93, 78, 0.18);
+  --emerald-surface-hover: rgba(28, 93, 78, 0.28);
+  --emerald-border: rgba(46, 163, 137, 0.32);
+  --emerald-glow: rgba(46, 163, 137, 0.25);
+  --emerald-text: #38c2a3;          /* High-contrast WCAG-compliant emerald for text */
+  --emerald-highlight: #4de0bf;     /* Bright telemetry emerald */
+
+  /* Official Brand Amber Gold (#CBA16A) & Accessible Variations */
+  --gold-raw: #cba16a;              /* Trademark official gold */
+  --gold-deep: #8a6a3b;             /* Dark structural gold */
+  --gold-surface: rgba(203, 161, 106, 0.12);
+  --gold-surface-hover: rgba(203, 161, 106, 0.22);
+  --gold-border: rgba(203, 161, 106, 0.35);
+  --gold-glow: rgba(203, 161, 106, 0.25);
+  --gold-highlight: #dfb87e;        /* High-contrast WCAG-compliant gold for text/accent */
+  --gold-bright: #f0cb95;
+
+  /* Technical Signal Cyan (#2EC7FF) - Reserved for Active Telemetry */
+  --cyan-raw: #2ec7ff;              /* Signal data cyan */
+  --cyan-deep: #1496d4;
+  --cyan-surface: rgba(46, 199, 255, 0.1);
+  --cyan-border: rgba(46, 199, 255, 0.35);
+  --cyan-glow: rgba(46, 199, 255, 0.28);
+  --cyan-text: #59d3ff;
+
+  /* Status Colors */
+  --status-live: #22c55e;
+  --status-live-glow: rgba(34, 197, 94, 0.35);
+  --status-pending: #f59e0b;
+  --status-critical: #ef4444;
+
+  /* Typography & Neutral Content Colors */
+  --text-primary: #eef3ff;          /* Crisp high-contrast reading white */
+  --text-secondary: #9aa8c7;        /* Balanced slate for descriptions */
+  --text-muted: #627299;            /* Technical annotations & metadata */
+  --text-inverse: #050811;          /* For solid bright buttons */
+  --white: #ffffff;
+
+  /* Luxury Gradient Text & Glow Presets */
+  --gradient-brand-text: linear-gradient(135deg, #ffffff 25%, #7ee7fc 70%, #38c2a3 100%);
+  --gradient-emerald-text: linear-gradient(135deg, #38c2a3 0%, #4de0bf 100%);
+  --gradient-gold-text: linear-gradient(135deg, #dfb87e 0%, #f7d8a7 100%);
+  --gradient-cyan-text: linear-gradient(135deg, #2ec7ff 0%, #7ee7fc 100%);
+  --gradient-border-glow: linear-gradient(135deg, rgba(46, 199, 255, 0.4), rgba(56, 194, 163, 0.3), rgba(203, 161, 106, 0.2));
+
+  /* Engineering Hairline Borders */
+  --border-subtle: rgba(120, 180, 255, 0.08);
+  --border-default: rgba(120, 180, 255, 0.15);
+  --border-elevated: rgba(120, 180, 255, 0.25);
+  --border-highlight: rgba(255, 255, 255, 0.35);
+
+  /* Elevation & Glow Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 48px -10px rgba(0, 0, 0, 0.65);
+  --shadow-glow-emerald: 0 0 35px rgba(28, 93, 78, 0.38);
+  --shadow-glow-gold: 0 0 35px rgba(203, 161, 106, 0.3);
+  --shadow-glow-cyan: 0 0 35px rgba(46, 199, 255, 0.32);
+  --shadow-glow-mixed: 0 0 45px rgba(46, 199, 255, 0.2), 0 0 30px rgba(28, 93, 78, 0.25);
+
+  /* ============================================================
+     2. TYPOGRAPHY SYSTEM
+     ============================================================ */
+  --font-ar-display: "Noto Kufi Arabic", system-ui, -apple-system, sans-serif;
+  --font-ar-body: "IBM Plex Sans Arabic", system-ui, -apple-system, sans-serif;
+  --font-en-display: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-en-body: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Direction-aware typography defaults (default: Arabic / RTL) */
+  --font-display: var(--font-ar-display);
+  --font-body: var(--font-ar-body);
+
+  /* Fluid Modular Type Scale */
+  --text-2xs: clamp(0.68rem, 0.64rem + 0.18vw, 0.74rem);
+  --text-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.82rem);
+  --text-sm: clamp(0.85rem, 0.8rem + 0.2vw, 0.92rem);
+  --text-base: clamp(0.96rem, 0.91rem + 0.22vw, 1.05rem);
+  --text-lg: clamp(1.1rem, 1.02rem + 0.35vw, 1.25rem);
+  --text-xl: clamp(1.28rem, 1.18rem + 0.5vw, 1.48rem);
+  --text-2xl: clamp(1.58rem, 1.42rem + 0.75vw, 1.95rem);
+  --text-3xl: clamp(2.05rem, 1.78rem + 1.25vw, 2.65rem);
+  --text-4xl: clamp(2.55rem, 2.15rem + 1.9vw, 3.6rem);
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.4;
+  --leading-normal: 1.65;
+  --leading-relaxed: 1.85;
+
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+
+  /* ============================================================
+     3. SPACING & LAYOUT SYSTEM (Logical & Responsive)
+     ============================================================ */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+
+  --container-max: 1220px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+  --section-padding-y: clamp(4rem, 8vw, 7rem);
+
+  /* Border Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ============================================================
+     4. MOTION & TRANSITION TOKENS
+     ============================================================ */
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+  --duration-deliberate: 650ms;
+
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+  --ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.2);
+
+  --transition-fast: all var(--duration-fast) var(--ease-standard);
+  --transition-normal: all var(--duration-normal) var(--ease-out-cubic);
+  --transition-slow: all var(--duration-slow) var(--ease-out-cubic);
+}
+
+/* Direction-aware typography mapping */
+[dir="ltr"] {
+  --font-display: var(--font-en-display);
+  --font-body: var(--font-en-body);
+}
+
+[dir="rtl"] {
+  --font-display: var(--font-ar-display);
+  --font-body: var(--font-ar-body);
+}
+
+/* Accessibility: User preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+    --duration-deliberate: 0ms;
+    --transition-fast: none;
+    --transition-normal: none;
+    --transition-slow: none;
+  }
+}
