@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import { useLanguage } from '../../context/useLanguage.js';
 import { useInquiry } from '../../context/useInquiry.js';
 import { Container, Button, OfoqLogo } from '../ui/index.js';
@@ -20,12 +21,12 @@ export function Navbar() {
   const closeMobile = () => setIsMobileOpen(false);
 
   const navLinks = [
-    { href: '#services', label: t('nav.services') },
-    { href: '#work', label: t('nav.projects') },
-    { href: '#process', label: t('nav.process') },
-    { href: '#pricing', label: t('nav.pricing') },
-    { href: '#about', label: t('nav.about') },
-    { href: '#contact', label: t('nav.contact') },
+    { to: '/services', label: t('nav.services') },
+    { to: '/work', label: t('nav.projects') },
+    { to: '/process', label: t('nav.process') },
+    { to: '/pricing', label: t('nav.pricing') },
+    { to: '/about', label: t('nav.about') },
+    { to: '/contact', label: t('nav.contact') },
   ];
 
   return (
@@ -37,7 +38,7 @@ export function Navbar() {
         right: 0,
         width: '100%',
         zIndex: 100,
-        background: isScrolled ? 'rgba(13, 21, 39, 0.94)' : 'rgba(15, 23, 42, 0.82)',
+        background: isScrolled ? 'rgba(13, 21, 39, 0.94)' : 'rgba(15, 23, 42, 0.85)',
         backdropFilter: 'blur(18px)',
         WebkitBackdropFilter: 'blur(18px)',
         borderBottom: '1px solid var(--border-subtle)',
@@ -56,7 +57,7 @@ export function Navbar() {
           }}
         >
           {/* Logo with official SVG mark */}
-          <OfoqLogo lang={lang} href="#top" onClick={closeMobile} />
+          <OfoqLogo lang={lang} to="/" onClick={closeMobile} />
 
           {/* Desktop Navigation Links */}
           <nav
@@ -64,34 +65,29 @@ export function Navbar() {
             style={{
               display: 'none',
               alignItems: 'center',
-              gap: '0.25rem',
+              gap: '0.35rem',
             }}
             className="md-flex-nav"
           >
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="focus-ring"
-                style={{
-                  color: 'var(--text-secondary)',
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) => `focus-ring ofoq-nav-link ${isActive ? 'active' : ''}`}
+                style={({ isActive }) => ({
+                  color: isActive ? 'var(--text-primary)' : 'var(--text-secondary)',
+                  background: isActive ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
+                  border: isActive ? '1px solid rgba(255, 255, 255, 0.12)' : '1px solid transparent',
                   fontSize: 'var(--text-sm)',
-                  fontWeight: 500,
-                  padding: '0.5rem 0.85rem',
+                  fontWeight: isActive ? 600 : 500,
+                  padding: '0.45rem 0.85rem',
                   borderRadius: 'var(--radius-sm)',
+                  textDecoration: 'none',
                   transition: 'color var(--duration-fast) var(--ease-standard), background var(--duration-fast) var(--ease-standard)',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.color = 'var(--text-primary)';
-                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'var(--text-secondary)';
-                  e.currentTarget.style.background = 'transparent';
-                }}
+                })}
               >
                 {link.label}
-              </a>
+              </NavLink>
             ))}
           </nav>
 
@@ -217,31 +213,32 @@ export function Navbar() {
           id="mobile-drawer"
           style={{
             borderTop: '1px solid var(--border-subtle)',
-            background: 'rgba(7, 11, 22, 0.98)',
+            background: 'rgba(13, 21, 39, 0.98)',
             backdropFilter: 'blur(20px)',
             padding: '1.25rem',
             display: 'flex',
             flexDirection: 'column',
-            gap: '0.75rem',
+            gap: '0.65rem',
           }}
         >
           {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
+            <NavLink
+              key={link.to}
+              to={link.to}
               onClick={closeMobile}
-              style={{
-                color: 'var(--text-primary)',
+              style={({ isActive }) => ({
+                color: isActive ? 'var(--emerald-text)' : 'var(--text-primary)',
                 fontSize: 'var(--text-base)',
-                fontWeight: 500,
+                fontWeight: isActive ? 600 : 500,
                 padding: '0.75rem 1rem',
                 borderRadius: 'var(--radius-sm)',
-                background: 'rgba(255, 255, 255, 0.03)',
-                border: '1px solid var(--border-subtle)',
-              }}
+                background: isActive ? 'rgba(28, 93, 78, 0.15)' : 'rgba(255, 255, 255, 0.03)',
+                border: isActive ? '1px solid var(--emerald-border)' : '1px solid var(--border-subtle)',
+                textDecoration: 'none',
+              })}
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
           <div style={{ marginTop: '0.5rem' }}>
             <Button
@@ -264,6 +261,10 @@ export function Navbar() {
           .md-flex-nav { display: flex !important; }
           .md-block-cta { display: block !important; }
           .md-hidden-burger { display: none !important; }
+        }
+        .ofoq-nav-link:hover {
+          color: var(--text-primary) !important;
+          background: rgba(255, 255, 255, 0.06) !important;
         }
       `}</style>
     </header>

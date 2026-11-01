@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/useLanguage.js';
 import { Container, OfoqLogo, Divider } from '../ui/index.js';
 
@@ -5,19 +6,19 @@ export function Footer() {
   const { lang, t, isRtl } = useLanguage();
 
   const siteLinks = [
-    { href: '#services', label: t('nav.services') },
-    { href: '#work', label: t('nav.projects') },
-    { href: '#process', label: t('nav.process') },
-    { href: '#pricing', label: t('nav.pricing') },
-    { href: '#about', label: t('nav.about') },
-    { href: '#contact', label: t('nav.contact') },
+    { to: '/services', label: t('nav.services') },
+    { to: '/work', label: t('nav.projects') },
+    { to: '/process', label: t('nav.process') },
+    { to: '/pricing', label: t('nav.pricing') },
+    { to: '/about', label: t('nav.about') },
+    { to: '/contact', label: t('nav.contact') },
   ];
 
   const serviceLinks = [
-    { href: '#services', label: t('services.mobileTitle') },
-    { href: '#services', label: t('services.webTitle') },
-    { href: '#services', label: t('services.desktopTitle') },
-    { href: '#services', label: t('services.systemsTitle') },
+    { to: '/services', label: t('services.mobileTitle') },
+    { to: '/services', label: t('services.webTitle') },
+    { to: '/services', label: t('services.desktopTitle') },
+    { to: '/services', label: t('services.systemsTitle') },
   ];
 
   return (
@@ -40,7 +41,7 @@ export function Footer() {
         >
           {/* Brand Column */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '34ch' }}>
-            <OfoqLogo lang={lang} href="#top" />
+            <OfoqLogo lang={lang} to="/" />
             <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', lineHeight: 'var(--leading-relaxed)', margin: 0 }}>
               {t('footer.brandDesc')}
             </p>
@@ -54,18 +55,18 @@ export function Footer() {
             <h4 style={{ fontSize: 'var(--text-sm)', fontFamily: 'var(--font-mono)', color: 'var(--emerald-text)', marginBottom: '1rem', textTransform: 'uppercase' }}>
               {t('footer.navTitle')}
             </h4>
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', padding: 0, listStyle: 'none' }}>
               {siteLinks.map((l) => (
-                <li key={l.href}>
-                  <a
-                    href={l.href}
+                <li key={l.to + l.label}>
+                  <Link
+                    to={l.to}
                     className="focus-ring"
-                    style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)', transition: 'color var(--duration-fast)' }}
+                    style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)', textDecoration: 'none', transition: 'color var(--duration-fast)' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
                   >
                     {l.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -76,18 +77,18 @@ export function Footer() {
             <h4 style={{ fontSize: 'var(--text-sm)', fontFamily: 'var(--font-mono)', color: 'var(--gold-highlight)', marginBottom: '1rem', textTransform: 'uppercase' }}>
               {t('footer.servicesTitle')}
             </h4>
-            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+            <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', padding: 0, listStyle: 'none' }}>
               {serviceLinks.map((s, idx) => (
                 <li key={idx}>
-                  <a
-                    href={s.href}
+                  <Link
+                    to={s.to}
                     className="focus-ring"
-                    style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)', transition: 'color var(--duration-fast)' }}
+                    style={{ fontSize: 'var(--text-sm)', color: 'var(--text-muted)', textDecoration: 'none', transition: 'color var(--duration-fast)' }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
                     onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
                   >
                     {s.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

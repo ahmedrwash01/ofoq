@@ -3,23 +3,22 @@
  * Verified brand SVG mark with architectural precision frame
  * Eliminates legacy white circle badge in favor of integrated dark emerald glass
  */
+import { Link } from 'react-router-dom';
 
 export function OfoqLogo({
   compact = false,
-  href = '#',
+  href = '/',
+  to = '/',
   lang = 'ar',
   className = '',
   ...props
 }) {
   const isArabic = lang === 'ar';
+  const target = to || href;
+  const isInternal = target.startsWith('/');
 
-  return (
-    <a 
-      href={href} 
-      className={`ofoq-logo-wrap focus-ring ${className}`.trim()} 
-      aria-label="Ofoq Digital Products — أفق للمنتجات الرقمية"
-      {...props}
-    >
+  const content = (
+    <>
       <div className="ofoq-logo-mark">
         <img 
           src="/assets/ofoq-mark.svg" 
@@ -40,6 +39,30 @@ export function OfoqLogo({
           </span>
         </div>
       )}
+    </>
+  );
+
+  if (isInternal) {
+    return (
+      <Link 
+        to={target} 
+        className={`ofoq-logo-wrap focus-ring ${className}`.trim()} 
+        aria-label="Ofoq Digital Products — أفق للمنتجات الرقمية"
+        {...props}
+      >
+        {content}
+      </Link>
+    );
+  }
+
+  return (
+    <a 
+      href={target} 
+      className={`ofoq-logo-wrap focus-ring ${className}`.trim()} 
+      aria-label="Ofoq Digital Products — أفق للمنتجات الرقمية"
+      {...props}
+    >
+      {content}
     </a>
   );
 }
