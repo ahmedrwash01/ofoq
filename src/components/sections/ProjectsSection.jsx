@@ -369,8 +369,8 @@ export function ProjectsSection() {
               <div
                 style={{
                   height: '100%',
-                  background: 'rgba(14, 22, 40, 0.7)',
-                  border: '1px solid rgba(255, 255, 255, 0.08)',
+                  background: 'rgba(23, 36, 64, 0.78)',
+                  border: '1px solid rgba(148, 190, 255, 0.15)',
                   borderRadius: '16px',
                   padding: '1.75rem',
                   display: 'flex',
@@ -453,7 +453,7 @@ export function ProjectsSection() {
         <div
           style={{
             marginTop: '5rem',
-            background: 'linear-gradient(135deg, rgba(14, 22, 40, 0.95) 0%, rgba(7, 13, 24, 0.95) 100%)',
+            background: 'linear-gradient(135deg, rgba(23, 36, 64, 0.95) 0%, rgba(13, 21, 39, 0.95) 100%)',
             border: '1px solid var(--border-elevated)',
             borderRadius: 'var(--radius-xl, 20px)',
             padding: 'clamp(1.5rem, 4vw, 2.75rem)',

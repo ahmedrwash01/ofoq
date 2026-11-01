@@ -24,9 +24,9 @@ export function IPhone16Mockup({
         aspectRatio: '9 / 18.5',
         borderRadius: '46px',
         padding: '10px',
-        background: 'linear-gradient(145deg, #2a3447 0%, #101626 50%, #080c16 100%)',
+        background: 'linear-gradient(145deg, #374660 0%, #1c273e 50%, #101828 100%)',
         boxShadow:
-          '0 0 0 2px rgba(255, 255, 255, 0.15), 0 30px 80px rgba(0, 0, 0, 0.85), 0 0 50px rgba(28, 93, 78, 0.2)',
+          '0 0 0 2px rgba(255, 255, 255, 0.2), 0 30px 80px rgba(0, 0, 0, 0.65), 0 0 50px rgba(16, 185, 129, 0.2)',
         overflow: 'visible',
         ...style,
       }}
@@ -40,7 +40,7 @@ export function IPhone16Mockup({
           top: '90px',
           width: '3px',
           height: '42px',
-          background: '#3a475d',
+          background: '#475569',
           borderRadius: '2px 0 0 2px',
         }}
       />
@@ -52,7 +52,7 @@ export function IPhone16Mockup({
           top: '142px',
           width: '3px',
           height: '42px',
-          background: '#3a475d',
+          background: '#475569',
           borderRadius: '2px 0 0 2px',
         }}
       />
@@ -64,7 +64,7 @@ export function IPhone16Mockup({
           top: '110px',
           width: '3px',
           height: '60px',
-          background: '#3a475d',
+          background: '#475569',
           borderRadius: '0 2px 2px 0',
         }}
       />
@@ -77,8 +77,8 @@ export function IPhone16Mockup({
           height: '100%',
           borderRadius: '38px',
           overflow: 'hidden',
-          background: '#040711',
-          border: '1px solid rgba(0, 0, 0, 0.9)',
+          background: '#0a0f1d',
+          border: '1px solid rgba(0, 0, 0, 0.7)',
         }}
       >
         {/* Top Status Bar & Dynamic Island */}

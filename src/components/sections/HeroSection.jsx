@@ -86,7 +86,7 @@ export function HeroSection() {
                 overflow: 'hidden',
                 borderRadius: 'var(--radius-xl, 18px)',
                 border: '1px solid rgba(77, 224, 191, 0.25)',
-                background: 'linear-gradient(135deg, rgba(14, 22, 40, 0.95) 0%, rgba(7, 12, 22, 0.98) 100%)',
+                background: 'linear-gradient(135deg, rgba(23, 36, 64, 0.95) 0%, rgba(13, 21, 39, 0.98) 100%)',
                 boxShadow: '0 25px 60px rgba(0, 0, 0, 0.7), 0 0 40px rgba(28, 93, 78, 0.2)',
               }}
             >

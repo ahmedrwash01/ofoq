@@ -37,7 +37,7 @@ export function Navbar() {
         right: 0,
         width: '100%',
         zIndex: 100,
-        background: isScrolled ? 'rgba(5, 8, 17, 0.94)' : 'rgba(7, 11, 22, 0.82)',
+        background: isScrolled ? 'rgba(13, 21, 39, 0.94)' : 'rgba(15, 23, 42, 0.82)',
         backdropFilter: 'blur(18px)',
         WebkitBackdropFilter: 'blur(18px)',
         borderBottom: '1px solid var(--border-subtle)',

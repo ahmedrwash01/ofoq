@@ -9,43 +9,43 @@
      1. COLOR SYSTEM (Cyber-Obsidian & Engineering Core)
      ============================================================ */
 
-  /* Canvas & Obsidian Surfaces */
-  --bg-canvas: #070b16;             /* Base canvas deep obsidian */
-  --bg-deep: #050811;               /* Sub-level deep obsidian */
-  --bg-elevated: #0d1424;           /* Elevated surface */
-  --bg-panel: #121a2e;              /* Core panel */
-  --bg-panel-2: #182238;            /* Hover/secondary surface */
-  --bg-glass: rgba(14, 22, 40, 0.72);
-  --bg-glass-elevated: rgba(20, 31, 56, 0.82);
-  --bg-glass-subtle: rgba(18, 26, 46, 0.4);
+  /* Canvas & Obsidian Surfaces — Lighter & Fresh Tech Slate */
+  --bg-canvas: #0d1527;             /* Base canvas: fresh luminous deep slate */
+  --bg-deep: #090f1d;               /* Sub-level deep slate */
+  --bg-elevated: #131e36;           /* Elevated surface */
+  --bg-panel: #172440;              /* Core panel */
+  --bg-panel-2: #1e2f54;            /* Hover/secondary surface */
+  --bg-glass: rgba(23, 36, 64, 0.76);
+  --bg-glass-elevated: rgba(28, 44, 78, 0.88);
+  --bg-glass-subtle: rgba(23, 36, 64, 0.45);
 
   /* Official Brand Emerald (#1C5D4E) & Accessible Variations */
   --emerald-raw: #1c5d4e;           /* Trademark official emerald */
   --emerald-deep: #123d33;          /* Dark structure emerald */
-  --emerald-surface: rgba(28, 93, 78, 0.18);
-  --emerald-surface-hover: rgba(28, 93, 78, 0.28);
-  --emerald-border: rgba(46, 163, 137, 0.32);
-  --emerald-glow: rgba(46, 163, 137, 0.25);
-  --emerald-text: #38c2a3;          /* High-contrast WCAG-compliant emerald for text */
-  --emerald-highlight: #4de0bf;     /* Bright telemetry emerald */
+  --emerald-surface: rgba(16, 185, 129, 0.18);
+  --emerald-surface-hover: rgba(16, 185, 129, 0.28);
+  --emerald-border: rgba(52, 211, 153, 0.38);
+  --emerald-glow: rgba(52, 211, 153, 0.3);
+  --emerald-text: #34d399;          /* High-contrast vibrant emerald for text */
+  --emerald-highlight: #2dd4bf;     /* Bright telemetry teal-emerald */
 
   /* Official Brand Amber Gold (#CBA16A) & Accessible Variations */
   --gold-raw: #cba16a;              /* Trademark official gold */
   --gold-deep: #8a6a3b;             /* Dark structural gold */
-  --gold-surface: rgba(203, 161, 106, 0.12);
-  --gold-surface-hover: rgba(203, 161, 106, 0.22);
-  --gold-border: rgba(203, 161, 106, 0.35);
-  --gold-glow: rgba(203, 161, 106, 0.25);
-  --gold-highlight: #dfb87e;        /* High-contrast WCAG-compliant gold for text/accent */
-  --gold-bright: #f0cb95;
+  --gold-surface: rgba(245, 158, 11, 0.15);
+  --gold-surface-hover: rgba(245, 158, 11, 0.25);
+  --gold-border: rgba(251, 191, 36, 0.4);
+  --gold-glow: rgba(251, 191, 36, 0.3);
+  --gold-highlight: #fbbf24;        /* Warm radiant gold for text/accent */
+  --gold-bright: #fde68a;
 
   /* Technical Signal Cyan (#2EC7FF) - Reserved for Active Telemetry */
   --cyan-raw: #2ec7ff;              /* Signal data cyan */
-  --cyan-deep: #1496d4;
-  --cyan-surface: rgba(46, 199, 255, 0.1);
-  --cyan-border: rgba(46, 199, 255, 0.35);
-  --cyan-glow: rgba(46, 199, 255, 0.28);
-  --cyan-text: #59d3ff;
+  --cyan-deep: #0284c7;
+  --cyan-surface: rgba(56, 189, 248, 0.15);
+  --cyan-border: rgba(56, 189, 248, 0.4);
+  --cyan-glow: rgba(56, 189, 248, 0.32);
+  --cyan-text: #38bdf8;
 
   /* Status Colors */
   --status-live: #22c55e;
@@ -53,34 +53,34 @@
   --status-pending: #f59e0b;
   --status-critical: #ef4444;
 
-  /* Typography & Neutral Content Colors */
-  --text-primary: #eef3ff;          /* Crisp high-contrast reading white */
-  --text-secondary: #9aa8c7;        /* Balanced slate for descriptions */
-  --text-muted: #627299;            /* Technical annotations & metadata */
-  --text-inverse: #050811;          /* For solid bright buttons */
+  /* Typography & Neutral Content Colors — Crisp & High Contrast */
+  --text-primary: #ffffff;          /* Crisp brilliant reading white */
+  --text-secondary: #cbd5e1;        /* Bright silver-slate for clear descriptions */
+  --text-muted: #94a3b8;            /* Technical annotations & metadata */
+  --text-inverse: #090f1d;          /* For solid bright buttons */
   --white: #ffffff;
 
   /* Luxury Gradient Text & Glow Presets */
-  --gradient-brand-text: linear-gradient(135deg, #ffffff 25%, #7ee7fc 70%, #38c2a3 100%);
-  --gradient-emerald-text: linear-gradient(135deg, #38c2a3 0%, #4de0bf 100%);
-  --gradient-gold-text: linear-gradient(135deg, #dfb87e 0%, #f7d8a7 100%);
-  --gradient-cyan-text: linear-gradient(135deg, #2ec7ff 0%, #7ee7fc 100%);
-  --gradient-border-glow: linear-gradient(135deg, rgba(46, 199, 255, 0.4), rgba(56, 194, 163, 0.3), rgba(203, 161, 106, 0.2));
+  --gradient-brand-text: linear-gradient(135deg, #ffffff 25%, #7ee7fc 70%, #34d399 100%);
+  --gradient-emerald-text: linear-gradient(135deg, #34d399 0%, #2dd4bf 100%);
+  --gradient-gold-text: linear-gradient(135deg, #fbbf24 0%, #fde68a 100%);
+  --gradient-cyan-text: linear-gradient(135deg, #38bdf8 0%, #7ee7fc 100%);
+  --gradient-border-glow: linear-gradient(135deg, rgba(56, 189, 248, 0.45), rgba(52, 211, 153, 0.35), rgba(251, 191, 36, 0.25));
 
   /* Engineering Hairline Borders */
-  --border-subtle: rgba(120, 180, 255, 0.08);
-  --border-default: rgba(120, 180, 255, 0.15);
-  --border-elevated: rgba(120, 180, 255, 0.25);
-  --border-highlight: rgba(255, 255, 255, 0.35);
+  --border-subtle: rgba(148, 190, 255, 0.12);
+  --border-default: rgba(148, 190, 255, 0.2);
+  --border-elevated: rgba(148, 190, 255, 0.32);
+  --border-highlight: rgba(255, 255, 255, 0.45);
 
   /* Elevation & Glow Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 20px 48px -10px rgba(0, 0, 0, 0.65);
-  --shadow-glow-emerald: 0 0 35px rgba(28, 93, 78, 0.38);
-  --shadow-glow-gold: 0 0 35px rgba(203, 161, 106, 0.3);
-  --shadow-glow-cyan: 0 0 35px rgba(46, 199, 255, 0.32);
-  --shadow-glow-mixed: 0 0 45px rgba(46, 199, 255, 0.2), 0 0 30px rgba(28, 93, 78, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 20px 48px -10px rgba(0, 0, 0, 0.55);
+  --shadow-glow-emerald: 0 0 35px rgba(16, 185, 129, 0.38);
+  --shadow-glow-gold: 0 0 35px rgba(245, 158, 11, 0.32);
+  --shadow-glow-cyan: 0 0 35px rgba(56, 189, 248, 0.35);
+  --shadow-glow-mixed: 0 0 45px rgba(56, 189, 248, 0.25), 0 0 30px rgba(16, 185, 129, 0.28);
 
   /* ============================================================
      2. TYPOGRAPHY SYSTEM

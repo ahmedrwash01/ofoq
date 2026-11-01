@@ -91,7 +91,7 @@ export function ProjectCaseStudyModal({ project, onClose }) {
           style={{
             padding: '1.25rem 1.75rem',
             borderBottom: '1px solid var(--border-subtle, rgba(255, 255, 255, 0.08))',
-            background: 'rgba(14, 22, 40, 0.95)',
+            background: 'rgba(23, 36, 64, 0.95)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
@@ -497,7 +497,7 @@ export function ProjectCaseStudyModal({ project, onClose }) {
           style={{
             padding: '1.25rem 1.75rem',
             borderTop: '1px solid var(--border-subtle, rgba(255, 255, 255, 0.08))',
-            background: 'rgba(14, 22, 40, 0.95)',
+            background: 'rgba(23, 36, 64, 0.95)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
