@@ -151,39 +151,36 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  padding: 0.35rem 0.85rem;
+  padding: 0.3rem 0.8rem;
   border-radius: var(--radius-full);
   font-family: var(--font-mono);
   font-size: var(--text-2xs);
   letter-spacing: var(--tracking-wide);
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: var(--leading-none);
   width: fit-content;
+  border: none;
 }
 
 .ofoq-badge--emerald {
-  background: var(--emerald-surface);
+  background: rgba(16, 185, 129, 0.14);
   color: var(--emerald-text);
-  border: 1px solid var(--emerald-border);
 }
 
 .ofoq-badge--gold {
-  background: var(--gold-surface);
+  background: rgba(245, 158, 11, 0.14);
   color: var(--gold-highlight);
-  border: 1px solid var(--gold-border);
 }
 
 .ofoq-badge--cyan {
-  background: var(--cyan-surface);
+  background: rgba(56, 189, 248, 0.14);
   color: var(--cyan-text);
-  border: 1px solid var(--cyan-border);
 }
 
 .ofoq-badge--neutral {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
   color: var(--text-secondary);
-  border: 1px solid var(--border-subtle);
 }
 
 /* ============================================================

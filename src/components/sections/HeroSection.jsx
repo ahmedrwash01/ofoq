@@ -115,13 +115,12 @@ export function HeroSection() {
               </div>
 
               {/* Architectural Tiers Display */}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
                 {/* Tier 1: Client Applications */}
                 <div
                   style={{
-                    background: 'rgba(255, 255, 255, 0.03)',
-                    border: '1px solid rgba(77, 224, 191, 0.2)',
-                    borderRadius: '8px',
+                    background: 'rgba(255, 255, 255, 0.04)',
+                    borderRadius: '10px',
                     padding: '0.85rem 1rem',
                     display: 'flex',
                     alignItems: 'center',
@@ -130,7 +129,7 @@ export function HeroSection() {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '6px', background: 'rgba(28, 93, 78, 0.3)', border: '1px solid rgba(77, 224, 191, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(16, 185, 129, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
                       📱
                     </div>
                     <div>
@@ -142,7 +141,7 @@ export function HeroSection() {
                       </div>
                     </div>
                   </div>
-                  <span style={{ fontSize: '10px', color: '#4de0bf', fontFamily: 'var(--font-mono)', background: 'rgba(77, 224, 191, 0.1)', padding: '2px 6px', borderRadius: '4px' }}>
+                  <span style={{ fontSize: '10.5px', color: 'var(--emerald-text)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>
                     60 FPS UI
                   </span>
                 </div>
@@ -150,9 +149,8 @@ export function HeroSection() {
                 {/* Tier 2: Microservices & APIs */}
                 <div
                   style={{
-                    background: 'rgba(255, 255, 255, 0.03)',
-                    border: '1px solid rgba(46, 199, 255, 0.2)',
-                    borderRadius: '8px',
+                    background: 'rgba(255, 255, 255, 0.04)',
+                    borderRadius: '10px',
                     padding: '0.85rem 1rem',
                     display: 'flex',
                     alignItems: 'center',
@@ -161,7 +159,7 @@ export function HeroSection() {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '6px', background: 'rgba(46, 199, 255, 0.15)', border: '1px solid rgba(46, 199, 255, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 189, 248, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
                       ⚡
                     </div>
                     <div>
@@ -173,7 +171,7 @@ export function HeroSection() {
                       </div>
                     </div>
                   </div>
-                  <span style={{ fontSize: '10px', color: '#2ec7ff', fontFamily: 'var(--font-mono)', background: 'rgba(46, 199, 255, 0.1)', padding: '2px 6px', borderRadius: '4px' }}>
+                  <span style={{ fontSize: '10.5px', color: 'var(--cyan-text)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>
                     &lt; 45ms P99
                   </span>
                 </div>
@@ -181,9 +179,8 @@ export function HeroSection() {
                 {/* Tier 3: Resilient Data & Cloud */}
                 <div
                   style={{
-                    background: 'rgba(255, 255, 255, 0.03)',
-                    border: '1px solid rgba(203, 161, 106, 0.25)',
-                    borderRadius: '8px',
+                    background: 'rgba(255, 255, 255, 0.04)',
+                    borderRadius: '10px',
                     padding: '0.85rem 1rem',
                     display: 'flex',
                     alignItems: 'center',
@@ -192,7 +189,7 @@ export function HeroSection() {
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '6px', background: 'rgba(203, 161, 106, 0.15)', border: '1px solid rgba(203, 161, 106, 0.4)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(245, 158, 11, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
                       🛡️
                     </div>
                     <div>
@@ -204,7 +201,7 @@ export function HeroSection() {
                       </div>
                     </div>
                   </div>
-                  <span style={{ fontSize: '10px', color: '#cba16a', fontFamily: 'var(--font-mono)', background: 'rgba(203, 161, 106, 0.1)', padding: '2px 6px', borderRadius: '4px' }}>
+                  <span style={{ fontSize: '10.5px', color: 'var(--gold-highlight)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>
                     AES-256 E2EE
                   </span>
                 </div>

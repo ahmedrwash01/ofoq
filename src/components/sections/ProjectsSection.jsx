@@ -224,58 +224,27 @@ export function ProjectsSection() {
                   className={`ofoq-row-ambient-glow ${idx % 2 === 0 ? 'ofoq-row-ambient-glow--emerald' : 'ofoq-row-ambient-glow--gold'}`}
                 />
 
-                {/* VISUAL COLUMN: Realistic iPhone 16 Pro 3D Mockup */}
+                {/* VISUAL COLUMN: Clean iPhone 16 Pro 3D Mockup */}
                 <div className="ofoq-grand-visual-col">
-                  <Spatial3DCard maxTilt={10}>
-                    <div style={{ position: 'relative', width: '100%', maxWidth: '340px' }}>
-                      {/* Floating Badge Top */}
-                      <div className="ofoq-floating-tag ofoq-floating-tag--top" style={{ transform: 'translateZ(35px)' }}>
-                        <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#4de0bf', boxShadow: '0 0 8px #4de0bf' }} />
-                        <span>{p.floatingBadge1}</span>
-                      </div>
-
-                      {/* iPhone 16 Pro Hardware Frame */}
+                  <Spatial3DCard maxTilt={8}>
+                    <div style={{ position: 'relative', width: '100%', maxWidth: '320px' }}>
                       <IPhone16Mockup
                         src={p.image}
                         alt={p.title}
                         title={p.title}
-                        style={{ transform: 'translateZ(18px)' }}
+                        style={{ transform: 'translateZ(12px)' }}
                       />
-
-                      {/* Floating Badge Bottom */}
-                      <div className="ofoq-floating-tag ofoq-floating-tag--bottom" style={{ transform: 'translateZ(40px)' }}>
-                        <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#cba16a', boxShadow: '0 0 8px #cba16a' }} />
-                        <span>{p.floatingBadge2}</span>
-                      </div>
-
-                      {/* Mobile Floating Tags Fallback */}
-                      <div className="ofoq-floating-tags-mobile">
-                        <div className="ofoq-floating-tag">
-                          <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#4de0bf' }} />
-                          <span>{p.floatingBadge1}</span>
-                        </div>
-                        <div className="ofoq-floating-tag">
-                          <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#cba16a' }} />
-                          <span>{p.floatingBadge2}</span>
-                        </div>
-                      </div>
                     </div>
                   </Spatial3DCard>
                 </div>
 
-                {/* STORY COLUMN: Narrative, Numbers & Verification */}
+                {/* STORY COLUMN: Clean Editorial Narrative & Metrics */}
                 <div className="ofoq-grand-story-col">
-                  {/* Big Watermark Number */}
-                  <span className="ofoq-watermark-number">{p.number}</span>
-
-                  {/* Badges Bar */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
-                    <TechnicalLabel variant={p.statusVariant}>
-                      {p.status}
-                    </TechnicalLabel>
-                    <span style={{ fontSize: 'var(--text-xs)', color: 'var(--text-muted)' }}>
-                      {p.category}
-                    </span>
+                  {/* Eyebrow Status & Category */}
+                  <div className="ofoq-project-eyebrow">
+                    <span className="ofoq-eyebrow-accent">{p.status}</span>
+                    <span style={{ opacity: 0.35 }}>•</span>
+                    <span>{p.category}</span>
                   </div>
 
                   {/* Title & Subheading */}
@@ -293,7 +262,19 @@ export function ProjectsSection() {
                     {p.description}
                   </p>
 
-                  {/* Luxury Metrics Bar */}
+                  {/* Clean Feature Highlights List */}
+                  <ul className="ofoq-feature-list">
+                    <li className="ofoq-feature-item">
+                      <span className="ofoq-feature-bullet" />
+                      <span>{p.floatingBadge1}</span>
+                    </li>
+                    <li className="ofoq-feature-item">
+                      <span className="ofoq-feature-bullet" style={{ background: 'var(--gold-highlight)' }} />
+                      <span>{p.floatingBadge2}</span>
+                    </li>
+                  </ul>
+
+                  {/* Open, Unboxed Performance Metrics */}
                   <div className="ofoq-luxury-metrics-bar">
                     {p.metrics.map((m, mIdx) => (
                       <div key={mIdx} className="ofoq-luxury-metric">
@@ -303,8 +284,9 @@ export function ProjectsSection() {
                     ))}
                   </div>
 
-                  {/* Technology Badges */}
+                  {/* Clean Borderless Technology Tags */}
                   <div className="ofoq-tech-pills">
+                    <span className="ofoq-tech-label">{isRtl ? 'التقنيات:' : 'Stack:'}</span>
                     {p.technologies.map((tItem, tIdx) => (
                       <span key={tIdx} className="ofoq-tech-pill">
                         {tItem}
@@ -312,7 +294,7 @@ export function ProjectsSection() {
                     ))}
                   </div>
 
-                  {/* Verified Links & Deep Dive CTA */}
+                  {/* Actions */}
                   <div className="ofoq-grand-actions">
                     <Button
                       variant="primary"
@@ -321,7 +303,7 @@ export function ProjectsSection() {
                         fontSize: 'var(--text-sm)',
                         padding: '0.75rem 1.6rem',
                         minHeight: '2.85rem',
-                        boxShadow: '0 4px 25px rgba(28, 93, 78, 0.5)',
+                        boxShadow: '0 4px 20px rgba(16, 185, 129, 0.35)',
                         fontWeight: 700,
                       }}
                     >
@@ -336,7 +318,7 @@ export function ProjectsSection() {
                         rel="noopener noreferrer"
                         className="ofoq-store-btn"
                       >
-                        <span style={{ fontSize: '14px' }}>{link.icon}</span>
+                        <span style={{ fontSize: '13px' }}>{link.icon}</span>
                         <span>{link.label}</span>
                       </a>
                     ))}
@@ -370,12 +352,12 @@ export function ProjectsSection() {
                 style={{
                   height: '100%',
                   background: 'rgba(23, 36, 64, 0.78)',
-                  border: '1px solid rgba(148, 190, 255, 0.15)',
+                  border: '1px solid rgba(148, 190, 255, 0.14)',
                   borderRadius: '16px',
                   padding: '1.75rem',
                   display: 'flex',
                   flexDirection: 'column',
-                  gap: '1rem',
+                  gap: '1.15rem',
                   backdropFilter: 'blur(12px)',
                 }}
               >
@@ -385,11 +367,10 @@ export function ProjectsSection() {
                       fontSize: '11px',
                       fontFamily: 'var(--font-mono)',
                       color: 'var(--gold-highlight)',
-                      background: 'rgba(203, 161, 106, 0.1)',
-                      border: '1px solid rgba(203, 161, 106, 0.25)',
-                      padding: '2px 8px',
-                      borderRadius: '4px',
-                      fontWeight: 700,
+                      background: 'rgba(245, 158, 11, 0.12)',
+                      padding: '3px 9px',
+                      borderRadius: 'var(--radius-full)',
+                      fontWeight: 600,
                     }}
                   >
                     {item.highlight}
@@ -408,26 +389,26 @@ export function ProjectsSection() {
                   </p>
                 </div>
 
-                {/* Quick Specs */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.5rem', paddingBlock: '0.6rem', borderBlock: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                {/* Clean Specs Row */}
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', paddingBlock: '0.5rem' }}>
                   {item.metrics.map((m, idx) => (
-                    <div key={idx} style={{ display: 'flex', flexDirection: 'column' }}>
-                      <span style={{ fontSize: '13px', fontWeight: 800, color: '#4de0bf', fontFamily: 'var(--font-display)' }}>{m.value}</span>
-                      <span style={{ fontSize: '10px', color: 'var(--text-muted)' }}>{m.label}</span>
+                    <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
+                      <span style={{ fontSize: '13px', fontWeight: 800, color: '#34d399', fontFamily: 'var(--font-display)' }}>{m.value}</span>
+                      <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{m.label}</span>
                     </div>
                   ))}
                 </div>
 
-                {/* Technologies */}
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem', marginTop: 'auto' }}>
+                {/* Clean Borderless Technologies */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.4rem', marginTop: 'auto' }}>
                   {item.technologies.map((tItem, idx) => (
-                    <span key={idx} style={{ fontSize: '10.5px', background: 'rgba(255, 255, 255, 0.04)', border: '1px solid rgba(255, 255, 255, 0.08)', borderRadius: '4px', padding: '2px 6px', color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
+                    <span key={idx} style={{ fontSize: '11px', background: 'rgba(255, 255, 255, 0.05)', borderRadius: 'var(--radius-sm)', padding: '2px 8px', color: 'var(--text-secondary)', fontFamily: 'var(--font-mono)' }}>
                       {tItem}
                     </span>
                   ))}
                 </div>
 
-                <div style={{ paddingTop: '0.75rem', borderTop: '1px solid rgba(255, 255, 255, 0.06)' }}>
+                <div style={{ paddingTop: '0.75rem' }}>
                   <Button
                     variant="outline"
                     onClick={() => setSelectedCaseStudy(item)}
@@ -435,9 +416,9 @@ export function ProjectsSection() {
                       width: '100%',
                       justifyContent: 'center',
                       fontSize: 'var(--text-xs)',
-                      padding: '0.5rem 1rem',
-                      minHeight: '2.4rem',
-                      borderColor: 'rgba(77, 224, 191, 0.3)',
+                      padding: '0.55rem 1rem',
+                      minHeight: '2.5rem',
+                      borderColor: 'rgba(52, 211, 153, 0.3)',
                       color: '#fff',
                     }}
                   >
