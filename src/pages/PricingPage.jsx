@@ -272,3 +272,4 @@ export function PricingPage() {
     </div>
   );
 }
+

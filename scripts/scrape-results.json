@@ -1,0 +1,94 @@
+{
+  "nasyaUser": {
+    "title": "nasya-user",
+    "url": "https://play.google.com/store/apps/details?id=com.fassladev.nasyaUser",
+    "downloaded": [
+      "nasya-user-screen-1.webp",
+      "nasya-user-screen-2.webp",
+      "nasya-user-screen-3.webp",
+      "nasya-user-screen-4.webp",
+      "nasya-user-screen-5.webp"
+    ]
+  },
+  "nasyaDelivery": {
+    "title": "nasya-delivery",
+    "url": "https://play.google.com/store/apps/details?id=com.fassladev.nasyaDelivery",
+    "downloaded": [
+      "nasya-delivery-screen-1.webp",
+      "nasya-delivery-screen-2.webp",
+      "nasya-delivery-screen-3.webp",
+      "nasya-delivery-screen-4.webp",
+      "nasya-delivery-screen-5.webp"
+    ]
+  },
+  "nasyaWeb": {
+    "title": "Nasia Market",
+    "url": "https://new.nasia-ec.com/",
+    "description": "Nasia Market - Premium Shopping Experience",
+    "downloaded": [
+      "nasya-web-og.png"
+    ]
+  },
+  "oryxApp": {
+    "title": "oryx-app",
+    "url": "https://play.google.com/store/apps/details?id=com.oryxinvestmentsegypt.oryx",
+    "downloaded": [
+      "oryx-app-screen-1.webp",
+      "oryx-app-screen-2.webp",
+      "oryx-app-screen-3.webp",
+      "oryx-app-screen-4.webp",
+      "oryx-app-screen-5.webp"
+    ]
+  },
+  "oryxWeb": {
+    "title": "Oryx - Real Estate Investment Platform",
+    "url": "https://oryxinvestmentsegypt.com/",
+    "description": "Experience the future of real estate investment with Oryx platform",
+    "downloaded": []
+  },
+  "moviqDriver": {
+    "title": "moviq-driver",
+    "url": "https://play.google.com/store/apps/details?id=info.moviq.driver",
+    "downloaded": [
+      "moviq-driver-screen-1.webp",
+      "moviq-driver-screen-2.webp",
+      "moviq-driver-screen-3.webp",
+      "moviq-driver-screen-4.webp",
+      "moviq-driver-screen-5.webp"
+    ]
+  },
+  "springCustomer": {
+    "title": "Version History",
+    "url": "https://apps.apple.com/eg/app/spring-customer/id6764054345",
+    "downloaded": [
+      "spring-customer-screen-1.jpg",
+      "spring-customer-screen-2.jpg",
+      "spring-customer-screen-3.jpg",
+      "spring-customer-screen-4.jpg",
+      "spring-customer-screen-5.jpg"
+    ]
+  },
+  "springDriver": {
+    "title": "متهيالي انتو مجربتوش تسجلوا ف البرنامج قبل ما تنزلوه -مش راضي يسجل أصلا وبيطلب car model ID",
+    "url": "https://apps.apple.com/eg/app/spring-driver/id6764071917",
+    "downloaded": [
+      "spring-driver-screen-1.jpg",
+      "spring-driver-screen-2.jpg",
+      "spring-driver-screen-3.jpg",
+      "spring-driver-screen-4.jpg",
+      "spring-driver-screen-5.jpg"
+    ]
+  },
+  "drivo": {
+    "title": "Home",
+    "url": "https://drivoeg.com/",
+    "description": "",
+    "downloaded": []
+  },
+  "se7aty": {
+    "title": "صحتي - رفيقك الصحي",
+    "url": "https://se7aty.com/",
+    "description": "",
+    "downloaded": []
+  }
+}

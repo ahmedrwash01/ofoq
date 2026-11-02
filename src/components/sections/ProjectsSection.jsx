@@ -16,184 +16,195 @@ export function ProjectsSection() {
   const { t, isRtl } = useLanguage();
   const [selectedCaseStudy, setSelectedCaseStudy] = useState(null);
 
-  // 1. Flagship Store Applications
+  // 1. Flagship Production Store Applications
   const grandProjects = [
     {
-      id: 'weport',
+      id: 'nasia',
       number: '01',
       serviceCategory: 'mobile',
-      title: t('projects.weportTitle'),
-      category: t('projects.weportCat'),
-      tagline: t('projects.weportTagline'),
-      description: t('projects.weportChallenge'),
-      solution: t('projects.weportSolution'),
-      image: '/assets/work-weport.webp',
-      fallback: '/assets/work-weport.png',
-      status: 'APP STORE & GOOGLE PLAY • VERIFIED',
+      title: t('projects.nasiaTitle'),
+      category: t('projects.nasiaCat'),
+      tagline: t('projects.nasiaTagline'),
+      description: t('projects.nasiaChallenge'),
+      solution: t('projects.nasiaSolution'),
+      image: '/assets/projects/nasya-user-screen-1.webp',
+      fallback: '/assets/projects/nasya-user-screen-1.webp',
+      status: 'GOOGLE PLAY & WEB • PRODUCTION LIVE',
       statusVariant: 'emerald',
-      floatingBadge1: isRtl ? '🛡️ محفظة دفع مشروط Escrow آمنة' : '🛡️ Escrow Protected Ledger',
-      floatingBadge2: isRtl ? '💬 محادثات مشفرة لحظية WebSockets' : '💬 Sub-120ms E2EE Live Chat',
+      floatingBadge1: isRtl ? '🛒 تطبيق عميل + تطبيق مندوب + منصة ويب' : '🛒 Tri-App Ecosystem (User, Courier, Web)',
+      floatingBadge2: isRtl ? '⚡ تتبع GPS فوري وحساب مسافات ديناميكي' : '⚡ Sub-120ms GPS Live Telemetry',
       metrics: [
-        { value: '35,000+', label: isRtl ? 'صفقة شحن ناجحة' : 'Escrow Matches' },
-        { value: '0%', label: isRtl ? 'خروقات أو نزاعات دفع' : 'Escrow Breaches' },
-        { value: '2 Stores', label: isRtl ? 'معتمد على Apple & Google' : 'iOS & Android' },
+        { value: '10,000+', label: isRtl ? 'طلب وشحنة منجزة' : 'Orders Fulfilled' },
+        { value: '3 Apps', label: isRtl ? 'منظومة متزامنة بالكامل' : 'Synchronized Apps' },
+        { value: '99.9%', label: isRtl ? 'جاهزية السيرفرات' : 'System Uptime' },
       ],
       links: [
-        { label: 'App Store', href: 'https://apps.apple.com/eg/app/weport-solutions/id1595639204', icon: '' },
-        { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.weport.solution', icon: '▶' },
+        { label: 'Google Play (User)', href: 'https://play.google.com/store/apps/details?id=com.fassladev.nasyaUser', icon: '▶' },
+        { label: 'Google Play (Courier)', href: 'https://play.google.com/store/apps/details?id=com.fassladev.nasyaDelivery', icon: '🛵' },
+        { label: isRtl ? 'الموقع الرسمي' : 'Official Portal', href: 'https://new.nasia-ec.com/', icon: '🌐' },
       ],
-      technologies: ['React Native', 'NestJS Microservices', 'WebSockets / Redis', 'Escrow Payment Engine', 'Firebase FCM', 'Docker'],
+      technologies: ['Flutter / Dart', 'Node.js Express', 'WebSockets / Redis', 'Google Maps API', 'Firebase FCM', 'Docker'],
       architectureLayers: {
-        client: 'React Native & Redux State Engine',
-        gateway: 'Kong API Gateway & JWT Auth',
-        backend: 'NestJS Microservices & WebSockets',
-        data: 'MongoDB Replica Set & Redis Pub/Sub',
+        client: 'Flutter Reactive State & Geofencing SDK',
+        gateway: 'NGINX Reverse Proxy & Rate Limiting',
+        backend: 'Node.js / Express Order Engine & WebSockets',
+        data: 'PostgreSQL Relational DB & Redis Cache',
       },
     },
     {
-      id: 'visgo',
+      id: 'spring',
       number: '02',
       serviceCategory: 'mobile',
-      title: t('projects.visgoTitle'),
-      category: t('projects.visgoCat'),
-      tagline: t('projects.visgoTagline'),
-      description: t('projects.visgoChallenge'),
-      solution: t('projects.visgoSolution'),
-      image: '/assets/work-visgo.webp',
-      fallback: '/assets/work-visgo.png',
-      status: 'STORE & WEB DEPLOYED',
-      statusVariant: 'emerald',
-      floatingBadge1: isRtl ? '⚡ GPS تتبع ذكي (<3% بطارية)' : '⚡ Background GPS Telemetry (<3%)',
-      floatingBadge2: isRtl ? '🗺️ كاش خرائط أوفلاين SQLite' : '🗺️ 100% Offline SQLite Cache',
+      title: t('projects.springTitle'),
+      category: t('projects.springCat'),
+      tagline: t('projects.springTagline'),
+      description: t('projects.springChallenge'),
+      solution: t('projects.springSolution'),
+      image: '/assets/projects/spring-customer-screen-1.png',
+      fallback: '/assets/projects/spring-customer-screen-1.png',
+      status: 'APPLE APP STORE • VERIFIED APPS',
+      statusVariant: 'cyan',
+      floatingBadge1: isRtl ? ' معتمد على Apple App Store' : ' Live on Apple App Store',
+      floatingBadge2: isRtl ? '📍 مطابقة فورية لأقرب كابتن متاح' : '📍 Real-Time Spatial Dispatching',
       metrics: [
-        { value: '20,000+', label: isRtl ? 'جولة سياحية منجزة' : 'Tours Completed' },
-        { value: '99.9%', label: isRtl ? 'استقرار وجاهزية الخوادم' : 'Uptime SLA' },
-        { value: '4.8★', label: isRtl ? 'تقييم متجر التطبيقات' : 'Store Rating' },
+        { value: '2 Apps', label: isRtl ? 'تطبيق ركاب + تطبيق كابتن' : 'Dual Store Apps' },
+        { value: '< 60ms', label: isRtl ? 'زمن بث إحداثيات الكابتن' : 'GPS Stream Latency' },
+        { value: '100%', label: isRtl ? 'امتثال لسياسات Apple' : 'Apple Store Compliance' },
       ],
       links: [
-        { label: isRtl ? 'الموقع الرسمي' : 'Official Website', href: 'https://visgo.app/', icon: '🌐' },
-        { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.visgo.app', icon: '▶' },
+        { label: 'App Store (Customer)', href: 'https://apps.apple.com/eg/app/spring-customer/id6764054345', icon: '' },
+        { label: 'App Store (Driver)', href: 'https://apps.apple.com/eg/app/spring-driver/id6764071917', icon: '🚘' },
       ],
-      technologies: ['Flutter / Dart', 'Mapbox GL SDK', 'Offline SQLite', 'Node.js Express', 'AWS CloudFront CDN', 'Background Geo-Fencing'],
+      technologies: ['iOS Native / Cross-Platform', 'Mapbox GL / Apple Maps', 'WebSockets / Socket.io', 'NestJS Backend', 'PostGIS Geospatial', 'AWS'],
       architectureLayers: {
-        client: 'Flutter & Mapbox GL Native SDK',
-        gateway: 'CloudFront CDN & NGINX Proxy',
-        backend: 'Node.js Express GeoJSON Engine',
-        data: 'SQLite Offline Cache & PostgreSQL',
+        client: 'Native iOS Architecture & Spatial Tracking',
+        gateway: 'Cloudflare Zero-Trust & API Gateway',
+        backend: 'NestJS Event-Driven Dispatch Service',
+        data: 'PostGIS Spatial Engine & Redis Pub/Sub',
       },
     },
     {
-      id: 'wealth',
+      id: 'oryx',
       number: '03',
       serviceCategory: 'mobile',
-      title: t('projects.wealthTitle'),
-      category: t('projects.wealthCat'),
-      tagline: t('projects.wealthTagline'),
-      description: t('projects.wealthChallenge'),
-      solution: t('projects.wealthSolution'),
-      image: '/assets/work-wealth.webp',
-      fallback: '/assets/work-wealth.png',
-      status: 'FINTECH • GOOGLE PLAY STORE',
+      title: t('projects.oryxTitle'),
+      category: t('projects.oryxCat'),
+      tagline: t('projects.oryxTagline'),
+      description: t('projects.oryxChallenge'),
+      solution: t('projects.oryxSolution'),
+      image: '/assets/projects/oryx-app-screen-1.webp',
+      fallback: '/assets/projects/oryx-app-screen-1.webp',
+      status: 'FINTECH & PROPTECH • STORE & WEB',
       statusVariant: 'gold',
-      floatingBadge1: isRtl ? '⚡ أسعار لحظية <100ms' : '⚡ Sub-100ms Live Ticker',
-      floatingBadge2: isRtl ? '🔒 حساب محلي وتشفير أوفلاين' : '🔒 Zero-Cloud Data Privacy',
+      floatingBadge1: isRtl ? '🏢 استعراض وحجز المشروعات العقارية' : '🏢 High-Yield PropTech Portfolios',
+      floatingBadge2: isRtl ? '🔒 حاسبة عوائد وأقساط بنكية مشفرة' : '🔒 Secure Financial Projections',
       metrics: [
-        { value: '15,000+', label: isRtl ? 'مستثمر نشط يومياً' : 'Daily Investors' },
-        { value: '< 100ms', label: isRtl ? 'زمن البث اللحظي' : 'Feed Latency' },
-        { value: '4.9★', label: isRtl ? 'تقييم متجر جوجل بلاي' : 'Store Rating' },
+        { value: 'EGP Millions', label: isRtl ? 'محافظ مشروعات تحت الإدارة' : 'Project Pipeline' },
+        { value: 'Mobile + Web', label: isRtl ? 'تطبيق جوال وبوابة رقمية' : 'Multi-Platform Suite' },
+        { value: 'AES-256', label: isRtl ? 'تشفير السجلات والبيانات' : 'Data Encryption' },
       ],
       links: [
-        { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.wealth.omar', icon: '▶' },
+        { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=com.oryxinvestmentsegypt.oryx', icon: '▶' },
+        { label: isRtl ? 'المنصة الرسمية' : 'Live Platform', href: 'https://oryxinvestmentsegypt.com/', icon: '🌐' },
       ],
-      technologies: ['Flutter Engine', 'Python FastAPI', 'WebSockets', 'TimescaleDB', 'Encrypted SQLite', 'Financial Algorithms'],
+      technologies: ['Flutter Mobile', 'React / Next.js', 'FastAPI / Node.js', 'PostgreSQL', 'Financial Modeling', 'Docker'],
       architectureLayers: {
-        client: 'Flutter & Custom Canvas Charts',
-        gateway: 'Cloudflare Zero-Trust Edge',
-        backend: 'FastAPI Python Socket Worker',
-        data: 'TimescaleDB & Local Encrypted SQLite',
+        client: 'Flutter Multi-Platform & Next.js Portal',
+        gateway: 'Secure TLS Proxy & OAuth2 Authentication',
+        backend: 'Modular Financial & Inventory Engine',
+        data: 'Encrypted PostgreSQL & Audit Ledger',
       },
     },
   ];
 
-  // 2. Specialized Enterprise Cloud Platforms
+  // 2. Specialized Production Platforms & Enterprise Systems
   const enterpriseSystems = [
     {
-      id: 'nexus',
-      serviceCategory: 'systems',
-      title: t('projects.nexusTitle'),
-      category: t('projects.nexusCat'),
-      tagline: t('projects.nexusTagline'),
-      description: t('projects.nexusDesc'),
-      challenge: t('projects.nexusChallenge'),
-      solution: t('projects.nexusSolution'),
-      status: 'ENTERPRISE SLA 99.98%',
+      id: 'moviq',
+      serviceCategory: 'mobile',
+      title: t('projects.moviqTitle'),
+      category: t('projects.moviqCat'),
+      tagline: t('projects.moviqTagline'),
+      description: t('projects.moviqDesc'),
+      challenge: t('projects.moviqChallenge'),
+      solution: t('projects.moviqSolution'),
+      image: '/assets/projects/moviq-driver-screen-1.webp',
+      status: 'LOGISTICS & DISPATCH • LIVE',
       statusVariant: 'cyan',
-      highlight: isRtl ? '🚚 45k شحنة شهرياً • -22% توفير وقود' : '🚚 45k Monthly Deliveries • -22% Fuel',
+      highlight: isRtl ? '📦 معالجة آلاف الشحنات • إثبات تسليم رقمي' : '📦 Thousands of Deliveries • Digital Proof',
       metrics: [
-        { value: '120+', label: isRtl ? 'شاحنة تحت الإدارة' : 'Fleet Vehicles' },
-        { value: '45k+', label: isRtl ? 'مهمة شهرية' : 'Monthly Trips' },
-        { value: '99.98%', label: isRtl ? 'نسبة استقرار SLA' : 'Enterprise SLA' },
+        { value: 'Offline-1st', label: isRtl ? 'يعمل دون اتصال' : 'Offline Mode' },
+        { value: 'Google Play', label: isRtl ? 'معتمد ومنشور' : 'Live on Store' },
+        { value: '< 200ms', label: isRtl ? 'سرعة مسح الباركود' : 'Scan Speed' },
       ],
-      technologies: ['Golang Microservices', 'Next.js 14', 'Apache Kafka', 'PostgreSQL / PostGIS', 'GIS TSP Routing'],
+      technologies: ['Flutter / Android', 'SQLite Local DB', 'REST APIs', 'Barcode / QR Scanner', 'Background Location'],
       architectureLayers: {
-        client: 'Next.js 14 & Leaflet GIS Mapping Engine',
-        gateway: 'Envoy Proxy & TLS Termination',
-        backend: 'Golang Microservices & Apache Kafka',
-        data: 'PostGIS Spatial DB & TimescaleDB',
+        client: 'Flutter Offline-First & Camera Scanner',
+        gateway: 'TLS API Gateway & Token Auth',
+        backend: 'Node.js Dispatch & Webhook Engine',
+        data: 'PostgreSQL Relational DB & SQLite Cache',
       },
-      links: [],
+      links: [
+        { label: 'Google Play', href: 'https://play.google.com/store/apps/details?id=info.moviq.driver', icon: '▶' },
+      ],
     },
     {
-      id: 'qismah',
+      id: 'drivo',
       serviceCategory: 'web',
-      title: t('projects.qismahTitle'),
-      category: t('projects.qismahCat'),
-      tagline: t('projects.qismahTagline'),
-      description: t('projects.qismahDesc'),
-      challenge: t('projects.qismahChallenge'),
-      solution: t('projects.qismahSolution'),
-      status: 'PRODUCTION PLATFORM',
-      statusVariant: 'gold',
-      highlight: isRtl ? '🔍 بحث فوري < 50ms • جولات 360°' : '🔍 Sub-50ms Faceted Search • 360°',
+      title: t('projects.drivoTitle'),
+      category: t('projects.drivoCat'),
+      tagline: t('projects.drivoTagline'),
+      description: t('projects.drivoDesc'),
+      challenge: t('projects.drivoChallenge'),
+      solution: t('projects.drivoSolution'),
+      image: '/assets/projects/drivo-screen-1.png',
+      status: 'SMART MOBILITY • WEB & APP',
+      statusVariant: 'emerald',
+      highlight: isRtl ? '🚗 رحلات مدن • سفر محافظات • مشاركة سيارات' : '🚗 City Commutes • Carpool • Intercity',
       metrics: [
-        { value: '150k+', label: isRtl ? 'زيارة شهرياً' : 'Monthly Views' },
-        { value: '< 50ms', label: isRtl ? 'زمن الاستجابة' : 'Search Latency' },
-        { value: '3x', label: isRtl ? 'معدل التحويل' : 'Conversion Rate' },
+        { value: '6 Services', label: isRtl ? 'خدمات تنقل في منصة واحدة' : 'Mobility Verticals' },
+        { value: 'Live Web', label: isRtl ? 'منصة منشورة ومتاحة' : 'Active Web Platform' },
+        { value: 'Instant', label: isRtl ? 'حجز فوري ومجدول' : 'Instant Booking' },
       ],
-      technologies: ['React / Next.js SSR', 'Elasticsearch 8', 'Three.js / WebGL', 'GraphQL APIs', 'AWS Cloud'],
+      technologies: ['Modern Web Architecture', 'Responsive UI/UX', 'Node.js Microservices', 'Route Matching', 'Payment Gateway'],
       architectureLayers: {
-        client: 'Next.js SSR & Three.js 3D Viewers',
-        gateway: 'Cloudflare Edge Cache Workers',
-        backend: 'Node.js Express & GraphQL APIs',
-        data: 'Elasticsearch 8.x & AWS S3 Storage',
+        client: 'Next.js & Responsive Mobile Web Shell',
+        gateway: 'Cloudflare Edge Cache & DDoS Defense',
+        backend: 'Microservices Fleet & Commute Dispatcher',
+        data: 'PostgreSQL & Geolocation Coordinates',
       },
-      links: [],
+      links: [
+        { label: isRtl ? 'زيارة الموقع' : 'Official Website', href: 'https://drivoeg.com/', icon: '🌐' },
+      ],
     },
     {
-      id: 'pulsecare',
+      id: 'se7aty',
       serviceCategory: 'systems',
-      title: t('projects.pulsecareTitle'),
-      category: t('projects.pulsecareCat'),
-      tagline: t('projects.pulsecareTagline'),
-      description: t('projects.pulsecareDesc'),
-      challenge: t('projects.pulsecareChallenge'),
-      solution: t('projects.pulsecareSolution'),
-      status: 'HIPAA COMPLIANT',
-      statusVariant: 'emerald',
-      highlight: isRtl ? '🔒 مكالمات WebRTC مشفرة E2EE' : '🔒 HIPAA Encrypted WebRTC Video',
+      title: t('projects.se7atyTitle'),
+      category: t('projects.se7atyCat'),
+      tagline: t('projects.se7atyTagline'),
+      description: t('projects.se7atyDesc'),
+      challenge: t('projects.se7atyChallenge'),
+      solution: t('projects.se7atySolution'),
+      image: '/assets/projects/se7aty-screen-3.png',
+      status: 'DIGITAL HEALTHCARE • ACTIVE',
+      statusVariant: 'gold',
+      highlight: isRtl ? '💊 تذكير أدوية دقيق • متابعة عائلية هادئة' : '💊 Exact Medication Alarms • Family Care',
       metrics: [
-        { value: '10,000+', label: isRtl ? 'جلسة مكتملة' : 'Consultations' },
-        { value: '42ms', label: isRtl ? 'تأخير الاتصال' : 'P2P Latency' },
-        { value: 'AES-256', label: isRtl ? 'تشفير تام' : 'E2EE Encryption' },
+        { value: '0% Fail', label: isRtl ? 'تنبيهات دقيقة بالدقيقة' : 'Alarm Reliability' },
+        { value: '100% Private', label: isRtl ? 'حماية تامة لبيانات المرضى' : 'Patient Privacy' },
+        { value: 'Accessible', label: isRtl ? 'سهل جداً لكبار السن' : 'Senior Friendly' },
       ],
-      technologies: ['WebRTC SFU Engine', 'Python / Django REST', 'React', 'AES-256 E2EE', 'Celery / Redis'],
+      technologies: ['Exact Alarm Architecture', 'React Native / Flutter', 'Encrypted Health Store', 'Push Notifications', 'WCAG Accessibility'],
       architectureLayers: {
-        client: 'React & WebRTC Native Video Engine',
-        gateway: 'Selective Forwarding Unit (SFU)',
-        backend: 'Django REST & Celery Async Workers',
-        data: 'Encrypted PostgreSQL & AWS KMS',
+        client: 'Accessible Cross-Platform Mobile Client',
+        gateway: 'Encrypted Health Ingestion Gateway',
+        backend: 'FastAPI Python Medication Engine',
+        data: 'Encrypted SQLite & HIPAA-grade Cloud Sync',
       },
-      links: [],
+      links: [
+        { label: isRtl ? 'زيارة المنصة' : 'Official Portal', href: 'https://se7aty.com/', icon: '🌐' },
+      ],
     },
   ];
 
@@ -294,14 +305,14 @@ export function ProjectsSection() {
                     ))}
                   </div>
 
-                  {/* Actions */}
-                  <div className="ofoq-grand-actions">
+                  {/* Actions & Live Store Links */}
+                  <div className="ofoq-grand-actions" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem' }}>
                     <Button
                       variant="primary"
                       onClick={() => setSelectedCaseStudy(p)}
                       style={{
                         fontSize: 'var(--text-sm)',
-                        padding: '0.75rem 1.6rem',
+                        padding: '0.75rem 1.4rem',
                         minHeight: '2.85rem',
                         boxShadow: '0 4px 20px rgba(16, 185, 129, 0.35)',
                         fontWeight: 700,
@@ -317,6 +328,20 @@ export function ProjectsSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="ofoq-store-btn"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '6px',
+                          padding: '0.65rem 1rem',
+                          borderRadius: 'var(--radius-sm)',
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          border: '1px solid var(--border-subtle)',
+                          color: 'var(--text-primary)',
+                          textDecoration: 'none',
+                          fontSize: 'var(--text-xs)',
+                          fontWeight: 600,
+                          transition: 'background var(--duration-fast)',
+                        }}
                       >
                         <span style={{ fontSize: '13px' }}>{link.icon}</span>
                         <span>{link.label}</span>
@@ -329,13 +354,13 @@ export function ProjectsSection() {
           })}
         </div>
 
-        {/* 2. SPECIALIZED ENTERPRISE PLATFORMS */}
+        {/* 2. SPECIALIZED PRODUCTION PLATFORMS */}
         <div style={{ marginTop: '5rem', marginBottom: '2rem' }}>
           <TechnicalLabel variant="cyan" style={{ marginBottom: '0.5rem' }}>
-            {isRtl ? 'أنظمة مؤسسية متقدمة' : 'ENTERPRISE PLATFORMS'}
+            {isRtl ? 'أنظمة حية ومنصات متخصصة' : 'PRODUCTION PLATFORMS & SUITES'}
           </TechnicalLabel>
           <h3 style={{ fontSize: 'clamp(1.75rem, 3.5vw, 2.4rem)', fontWeight: 800, color: 'var(--text-primary)', margin: '0.2rem 0' }}>
-            {isRtl ? 'منظومات مؤسسية متكاملة وقدرات حوسبة سحابية' : 'Mission-Critical Cloud & Scaled Architectures'}
+            {isRtl ? 'منظومات لوجستية وطبية وتطبيقات نقل ذكي' : 'Logistics, Healthcare & Mobility Architectures'}
           </h3>
         </div>
 
@@ -358,43 +383,94 @@ export function ProjectsSection() {
                   display: 'flex',
                   flexDirection: 'column',
                   gap: '1.15rem',
-                  backdropFilter: 'blur(12px)',
+                  position: 'relative',
+                  overflow: 'hidden',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '0.5rem', flexWrap: 'wrap' }}>
-                  <span
+                {/* Visual Preview Image */}
+                {item.image && (
+                  <div
                     style={{
-                      fontSize: '11px',
-                      fontFamily: 'var(--font-mono)',
-                      color: 'var(--gold-highlight)',
-                      background: 'rgba(245, 158, 11, 0.12)',
-                      padding: '3px 9px',
-                      borderRadius: 'var(--radius-full)',
-                      fontWeight: 600,
+                      width: '100%',
+                      height: '160px',
+                      borderRadius: '10px',
+                      overflow: 'hidden',
+                      background: '#0d1527',
+                      position: 'relative',
+                      border: '1px solid var(--border-subtle)',
                     }}
                   >
-                    {item.highlight}
-                  </span>
-                  <TechnicalLabel variant={item.statusVariant} style={{ fontSize: '9px' }}>
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      loading="lazy"
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        objectPosition: 'center top',
+                      }}
+                    />
+                    <div
+                      style={{
+                        position: 'absolute',
+                        inset: 0,
+                        background: 'linear-gradient(to top, rgba(23, 36, 64, 0.9) 0%, transparent 70%)',
+                      }}
+                    />
+                  </div>
+                )}
+
+                {/* Eyebrow */}
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <span
+                    style={{
+                      fontFamily: 'var(--font-mono)',
+                      fontSize: '11px',
+                      fontWeight: 600,
+                      color: item.statusVariant === 'emerald' ? 'var(--emerald-text)' : item.statusVariant === 'gold' ? 'var(--gold-highlight)' : 'var(--cyan-text)',
+                      letterSpacing: '0.04em',
+                    }}
+                  >
                     {item.status}
-                  </TechnicalLabel>
+                  </span>
+                  <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{item.category}</span>
                 </div>
 
+                {/* Title & Tagline */}
                 <div>
-                  <h4 style={{ fontSize: 'var(--text-xl)', fontWeight: 700, color: '#fff', margin: '0 0 0.4rem 0' }}>
+                  <h4 style={{ fontSize: 'var(--text-lg)', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 0.35rem 0' }}>
                     {item.title}
                   </h4>
-                  <p style={{ fontSize: 'var(--text-sm)', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
-                    {item.description}
+                  <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', lineHeight: 1.5, margin: 0 }}>
+                    {item.tagline}
                   </p>
                 </div>
 
-                {/* Clean Specs Row */}
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.75rem', paddingBlock: '0.5rem' }}>
+                {/* Highlight callout */}
+                <div
+                  style={{
+                    background: 'rgba(255, 255, 255, 0.04)',
+                    padding: '0.5rem 0.75rem',
+                    borderRadius: '8px',
+                    fontSize: '12px',
+                    color: 'var(--text-primary)',
+                    fontWeight: 500,
+                  }}
+                >
+                  {item.highlight}
+                </div>
+
+                {/* Unboxed Metrics */}
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '0.5rem', borderTop: '1px solid var(--border-subtle)', paddingTop: '0.75rem' }}>
                   {item.metrics.map((m, idx) => (
-                    <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '0.15rem' }}>
-                      <span style={{ fontSize: '13px', fontWeight: 800, color: '#34d399', fontFamily: 'var(--font-display)' }}>{m.value}</span>
-                      <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>{m.label}</span>
+                    <div key={idx} style={{ textAlign: isRtl ? 'right' : 'left' }}>
+                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: '14px', fontWeight: 800, color: 'var(--text-primary)' }}>
+                        {m.value}
+                      </div>
+                      <div style={{ fontSize: '10px', color: 'var(--text-muted)' }}>
+                        {m.label}
+                      </div>
                     </div>
                   ))}
                 </div>
@@ -408,22 +484,48 @@ export function ProjectsSection() {
                   ))}
                 </div>
 
-                <div style={{ paddingTop: '0.75rem' }}>
+                {/* Actions & Links */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', paddingTop: '0.75rem' }}>
                   <Button
                     variant="outline"
                     onClick={() => setSelectedCaseStudy(item)}
                     style={{
-                      width: '100%',
+                      flex: 1,
                       justifyContent: 'center',
                       fontSize: 'var(--text-xs)',
-                      padding: '0.55rem 1rem',
-                      minHeight: '2.5rem',
+                      padding: '0.55rem 0.85rem',
+                      minHeight: '2.4rem',
                       borderColor: 'rgba(52, 211, 153, 0.3)',
                       color: '#fff',
                     }}
                   >
                     🔍 {t('projects.caseStudy')}
                   </Button>
+
+                  {item.links?.map((link, lIdx) => (
+                    <a
+                      key={lIdx}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '5px',
+                        padding: '0.55rem 0.85rem',
+                        borderRadius: 'var(--radius-sm)',
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        border: '1px solid var(--border-subtle)',
+                        color: 'var(--text-primary)',
+                        textDecoration: 'none',
+                        fontSize: 'var(--text-xs)',
+                        fontWeight: 600,
+                      }}
+                    >
+                      <span>{link.icon}</span>
+                      <span>{link.label}</span>
+                    </a>
+                  ))}
                 </div>
               </div>
             </Spatial3DCard>
