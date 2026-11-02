@@ -36,3 +36,4 @@ const html = `<!DOCTYPE html>
 
 fs.writeFileSync('public/check-options.html', html);
 console.log('check-options.html created');
+

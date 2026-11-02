@@ -25,7 +25,7 @@ export const translations = {
     'hero.ctaPrimary': 'ناقش مشروعك معنا',
     'hero.ctaSecondary': 'استكشف أعمالنا',
     'hero.showcaseTitle': 'منتجات حقيقية في السوق',
-    'hero.showcaseStatus': '3 تطبيقات منشورة على المتاجر',
+    'hero.showcaseStatus': '+8 تطبيقات منشورة على المتاجر',
     'hero.viewProject': 'استعرض المشروع كاملاً',
     'hero.storeBadge': 'منشور ومعتمد على المتاجر',
     'hero.layerApp': 'طبقة التطبيقات (موبايل وويب وسطح مكتب)',
@@ -34,10 +34,10 @@ export const translations = {
     'hero.location': 'القاهرة، مصر',
 
     // Trust Metrics
-    'metrics.projectsNum': '+45',
+    'metrics.projectsNum': '+15',
     'metrics.projectsLabel': 'مشاريع وأنظمة إنتاجية مُسلَّمة',
     'metrics.projectsSub': 'حلول حية ومستقرة بالسوق',
-    'metrics.storeNum': '+20',
+    'metrics.storeNum': '+8',
     'metrics.storeLabel': 'تطبيقات معتمدة على المتاجر',
     'metrics.storeSub': 'على Google Play و App Store والويب',
     'metrics.replyNum': '24h',
@@ -364,7 +364,7 @@ export const translations = {
     'hero.ctaPrimary': 'Discuss a project',
     'hero.ctaSecondary': 'Explore our work',
     'hero.showcaseTitle': 'Live Production Products',
-    'hero.showcaseStatus': '3 Store-Published Systems',
+    'hero.showcaseStatus': '8+ Store-Published Systems',
     'hero.viewProject': 'Explore Full Case Study',
     'hero.storeBadge': 'STORE VERIFIED & ACTIVE',
     'hero.layerApp': 'Client Layer (Mobile, Web & Desktop)',
@@ -373,10 +373,10 @@ export const translations = {
     'hero.location': 'Cairo, Egypt',
 
     // Trust Metrics
-    'metrics.projectsNum': '45+',
+    'metrics.projectsNum': '15+',
     'metrics.projectsLabel': 'Delivered Production Systems',
     'metrics.projectsSub': 'Live, scalable enterprise software',
-    'metrics.storeNum': '20+',
+    'metrics.storeNum': '8+',
     'metrics.storeLabel': 'Store-Published Applications',
     'metrics.storeSub': 'Google Play, App Store & Web',
     'metrics.replyNum': '24h',

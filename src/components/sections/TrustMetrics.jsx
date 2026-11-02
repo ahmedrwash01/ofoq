@@ -6,7 +6,7 @@ export function TrustMetrics() {
 
   const metrics = [
     {
-      target: 45,
+      target: 15,
       prefix: isRtl ? '+' : '',
       suffix: isRtl ? '' : '+',
       duration: 1600,
@@ -16,7 +16,7 @@ export function TrustMetrics() {
       glow: 'var(--shadow-glow-emerald)',
     },
     {
-      target: 20,
+      target: 8,
       prefix: isRtl ? '+' : '',
       suffix: isRtl ? '' : '+',
       duration: 1400,

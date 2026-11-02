@@ -148,3 +148,4 @@ const moviqSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 170" 
 fs.writeFileSync('public/assets/projects/drivo-card-banner.svg', drivoSvg);
 fs.writeFileSync('public/assets/projects/moviq-card-banner.svg', moviqSvg);
 console.log('Created drivo-card-banner.svg and moviq-card-banner.svg!');
+
