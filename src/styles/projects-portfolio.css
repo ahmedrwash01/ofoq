@@ -187,10 +187,27 @@
   background: transparent;
 }
 
+@media (max-width: 540px) {
+  .ofoq-luxury-metrics-bar {
+    gap: 0.65rem;
+    padding-block: 0.75rem;
+  }
+
+  .ofoq-luxury-metric-num {
+    font-size: 1.25rem !important;
+  }
+
+  .ofoq-luxury-metric-label {
+    font-size: 10px !important;
+    line-height: 1.25 !important;
+  }
+}
+
 .ofoq-luxury-metric {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+  min-width: 0;
 }
 
 .ofoq-luxury-metric-num {

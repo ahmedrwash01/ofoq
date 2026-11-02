@@ -219,6 +219,9 @@ export function Navbar() {
             display: 'flex',
             flexDirection: 'column',
             gap: '0.65rem',
+            maxHeight: 'calc(100vh - 4.75rem)',
+            overflowY: 'auto',
+            WebkitOverflowScrolling: 'touch',
           }}
         >
           {navLinks.map((link) => (

@@ -128,20 +128,20 @@ export function HeroSection() {
                     gap: '0.75rem',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(16, 185, 129, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', minWidth: 0, flex: 1 }}>
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(16, 185, 129, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', flexShrink: 0 }}>
                       📱
                     </div>
-                    <div>
-                      <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: '#fff' }}>
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>
                         {isRtl ? 'تطبيقات الموبايل والويب عالي الأداء' : 'Native & Cross-Platform Clients'}
                       </div>
-                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         iOS • Android • React Native • Flutter • Next.js
                       </div>
                     </div>
                   </div>
-                  <span style={{ fontSize: '10.5px', color: 'var(--emerald-text)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>
+                  <span style={{ fontSize: '10.5px', color: 'var(--emerald-text)', fontFamily: 'var(--font-mono)', fontWeight: 600, flexShrink: 0, whiteSpace: 'nowrap' }}>
                     60 FPS UI
                   </span>
                 </div>
@@ -158,20 +158,20 @@ export function HeroSection() {
                     gap: '0.75rem',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 189, 248, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', minWidth: 0, flex: 1 }}>
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(56, 189, 248, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', flexShrink: 0 }}>
                       ⚡
                     </div>
-                    <div>
-                      <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: '#fff' }}>
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>
                         {isRtl ? 'الخدمات المصغرة والبث اللحظي' : 'Real-Time Microservices & APIs'}
                       </div>
-                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         Golang • NestJS • Python FastAPI • WebSockets
                       </div>
                     </div>
                   </div>
-                  <span style={{ fontSize: '10.5px', color: 'var(--cyan-text)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>
+                  <span style={{ fontSize: '10.5px', color: 'var(--cyan-text)', fontFamily: 'var(--font-mono)', fontWeight: 600, flexShrink: 0, whiteSpace: 'nowrap' }}>
                     &lt; 45ms P99
                   </span>
                 </div>
@@ -188,20 +188,20 @@ export function HeroSection() {
                     gap: '0.75rem',
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(245, 158, 11, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', minWidth: 0, flex: 1 }}>
+                    <div style={{ width: '32px', height: '32px', borderRadius: '8px', background: 'rgba(245, 158, 11, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', flexShrink: 0 }}>
                       🛡️
                     </div>
-                    <div>
-                      <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: '#fff' }}>
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{ fontSize: 'var(--text-xs)', fontWeight: 700, color: '#fff', lineHeight: 1.3 }}>
                         {isRtl ? 'قواعد البيانات والتخزين الموزع' : 'Fault-Tolerant Distributed Storage'}
                       </div>
-                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>
+                      <div style={{ fontSize: '11px', color: 'var(--text-muted)', fontFamily: 'var(--font-mono)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
                         PostgreSQL Multi-AZ • TimescaleDB • Redis Cluster
                       </div>
                     </div>
                   </div>
-                  <span style={{ fontSize: '10.5px', color: 'var(--gold-highlight)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>
+                  <span style={{ fontSize: '10.5px', color: 'var(--gold-highlight)', fontFamily: 'var(--font-mono)', fontWeight: 600, flexShrink: 0, whiteSpace: 'nowrap' }}>
                     AES-256 E2EE
                   </span>
                 </div>

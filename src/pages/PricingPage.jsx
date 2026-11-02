@@ -147,11 +147,29 @@ export function PricingPage() {
                 ? 'قارن بين باقاتنا الهندسية واختر المسار الأنسب لمرحلة نمو مشروعك'
                 : 'Compare technical capabilities and pick the best path for your growth stage'}
             </p>
+            <div style={{ marginTop: '0.75rem', display: 'flex', justifyContent: 'center' }}>
+              <span
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  fontSize: '11px',
+                  fontFamily: 'var(--font-mono)',
+                  color: 'var(--text-muted)',
+                  background: 'rgba(255, 255, 255, 0.04)',
+                  padding: '4px 10px',
+                  borderRadius: 'var(--radius-full)',
+                }}
+              >
+                {isRtl ? '← يمكنك سحب الجدول أفقياً على الهاتف لعرض كافة التفاصيل →' : '← Swipe horizontally on mobile to view full matrix →'}
+              </span>
+            </div>
           </div>
 
           <div
             style={{
               overflowX: 'auto',
+              WebkitOverflowScrolling: 'touch',
               borderRadius: 'var(--radius-lg)',
               border: '1px solid var(--border-default)',
               background: 'var(--bg-surface)',
