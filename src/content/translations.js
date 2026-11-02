@@ -329,8 +329,8 @@ export const translations = {
     'contact.whatsappBtn': 'تواصل عبر واتساب',
     'contact.emailBtn': 'إرسال بريد إلكتروني',
     'contact.callBtn': 'اتصال هاتفي مباشر',
-    'contact.directEmail': 'hello@ofoq.dev',
-    'contact.directPhone': '+20 111 507 7582',
+    'contact.directEmail': 'ofoqtech.info@gmail.com',
+    'contact.directPhone': '+20 103 654 4369',
     'contact.locationTitle': 'المقر الرئيسي',
     'contact.locationDesc': 'القاهرة، مصر',
 
@@ -668,8 +668,8 @@ export const translations = {
     'contact.whatsappBtn': 'Chat on WhatsApp',
     'contact.emailBtn': 'Send an Email',
     'contact.callBtn': 'Call Us Directly',
-    'contact.directEmail': 'hello@ofoq.dev',
-    'contact.directPhone': '+20 111 507 7582',
+    'contact.directEmail': 'ofoqtech.info@gmail.com',
+    'contact.directPhone': '+20 103 654 4369',
     'contact.locationTitle': 'Headquarters',
     'contact.locationDesc': 'Cairo, Egypt',
 

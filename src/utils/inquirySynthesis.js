@@ -4,8 +4,8 @@
  * THE HORIZON ENGINE — محرك الأفق
  */
 
-export const OFOQ_WHATSAPP_PHONE = '201115077582';
-export const OFOQ_CONTACT_EMAIL = 'hello@ofoq.dev';
+export const OFOQ_WHATSAPP_PHONE = '201036544369';
+export const OFOQ_CONTACT_EMAIL = 'ofoqtech.info@gmail.com';
 
 /**
  * Builds structured plain text, WhatsApp URL, and mailto URL from inquiry fields

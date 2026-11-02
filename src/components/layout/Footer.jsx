@@ -101,22 +101,22 @@ export function Footer() {
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: 'var(--text-sm)' }}>
               <a
-                href="mailto:hello@ofoq.dev"
+                href="mailto:ofoqtech.info@gmail.com"
                 style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
               >
-                hello@ofoq.dev
+                ofoqtech.info@gmail.com
               </a>
               <a
-                href="https://wa.me/201115077582"
+                href="https://wa.me/201036544369"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: 'var(--text-muted)', textDecoration: 'none' }}
                 onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--text-primary)')}
                 onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--text-muted)')}
               >
-                WhatsApp (+20 111 507 7582)
+                WhatsApp (+20 103 654 4369)
               </a>
               <span style={{ color: 'var(--text-muted)' }}>
                 {t('contact.locationDesc')}

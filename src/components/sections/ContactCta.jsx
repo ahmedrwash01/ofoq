@@ -86,7 +86,7 @@ export function ContactCta() {
                   {t('contact.inquiryBtn')}
                 </Button>
                 <Button
-                  href="https://wa.me/201115077582"
+                  href="https://wa.me/201036544369"
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="secondary"
@@ -95,7 +95,7 @@ export function ContactCta() {
                   {t('contact.whatsappBtn')}
                 </Button>
                 <Button
-                  href="mailto:hello@ofoq.dev"
+                  href="mailto:ofoqtech.info@gmail.com"
                   variant="ghost"
                   style={{ padding: '0.85rem 1.45rem' }}
                 >
@@ -122,7 +122,7 @@ export function ContactCta() {
                   {isRtl ? 'البريد الإلكتروني المباشر' : 'DIRECT EMAIL'}
                 </span>
                 <a
-                  href="mailto:hello@ofoq.dev"
+                  href="mailto:ofoqtech.info@gmail.com"
                   className="focus-ring"
                   style={{
                     fontSize: 'var(--text-lg)',
@@ -132,7 +132,7 @@ export function ContactCta() {
                     width: 'fit-content',
                   }}
                 >
-                  hello@ofoq.dev
+                  ofoqtech.info@gmail.com
                 </a>
               </div>
 
@@ -142,7 +142,7 @@ export function ContactCta() {
                   {isRtl ? 'هاتف / واتساب' : 'PHONE & WHATSAPP'}
                 </span>
                 <a
-                  href="tel:+201115077582"
+                  href="tel:+201036544369"
                   className="focus-ring"
                   style={{
                     fontSize: 'var(--text-lg)',
@@ -154,7 +154,7 @@ export function ContactCta() {
                     textAlign: isRtl ? 'right' : 'left',
                   }}
                 >
-                  +20 111 507 7582
+                  +20 103 654 4369
                 </a>
               </div>
 
