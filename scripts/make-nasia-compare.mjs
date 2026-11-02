@@ -20,3 +20,4 @@ const html = `<!DOCTYPE html>
 
 fs.writeFileSync('public/compare-nasia.html', html);
 console.log('compare-nasia.html ready');
+

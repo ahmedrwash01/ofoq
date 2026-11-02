@@ -165,3 +165,4 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 900" width
 
 fs.writeFileSync('public/assets/projects/nasia-app-branded.svg', svg);
 console.log('Created public/assets/projects/nasia-app-branded.svg with official Nasia logo!');
+

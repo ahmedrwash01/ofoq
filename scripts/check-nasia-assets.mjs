@@ -14,3 +14,4 @@ const html = `<!DOCTYPE html>
 
 fs.writeFileSync('public/compare-assets.html', html);
 console.log('compare-assets.html ready');
+

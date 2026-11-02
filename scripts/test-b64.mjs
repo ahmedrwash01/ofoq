@@ -9,3 +9,4 @@ const logoBuf = fs.readFileSync('public/assets/projects/nasia-brand-1.jpeg');
 console.log('nasia-brand-1.jpeg size:', logoBuf.length, 'bytes');
 const logoB64 = logoBuf.toString('base64');
 console.log('logo base64 length:', logoB64.length);
+

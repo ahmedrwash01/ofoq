@@ -1,0 +1,38 @@
+import fs from 'fs';
+
+const html = `<!DOCTYPE html>
+<html>
+<body style="background:#0f172a; color:#fff; display:flex; flex-wrap:wrap; gap:20px; font-family:sans-serif; padding:20px;">
+  <div>
+    <h3>drivo-screen-1</h3>
+    <img src="/assets/projects/drivo-screen-1.png" style="height:300px; border-radius:8px;" />
+  </div>
+  <div>
+    <h3>drivo-screen-2</h3>
+    <img src="/assets/projects/drivo-screen-2.png" style="height:300px; border-radius:8px;" />
+  </div>
+  <div>
+    <h3>moviq-driver-screen-1</h3>
+    <img src="/assets/projects/moviq-driver-screen-1.webp" style="height:300px; border-radius:8px;" />
+  </div>
+  <div>
+    <h3>moviq-driver-screen-2</h3>
+    <img src="/assets/projects/moviq-driver-screen-2.webp" style="height:300px; border-radius:8px;" />
+  </div>
+  <div>
+    <h3>moviq-driver-screen-3</h3>
+    <img src="/assets/projects/moviq-driver-screen-3.webp" style="height:300px; border-radius:8px;" />
+  </div>
+  <div>
+    <h3>moviq-driver-screen-4</h3>
+    <img src="/assets/projects/moviq-driver-screen-4.webp" style="height:300px; border-radius:8px;" />
+  </div>
+  <div>
+    <h3>se7aty-screen-3 (Original)</h3>
+    <img src="/assets/projects/se7aty-screen-3.png" style="height:300px; border-radius:8px;" />
+  </div>
+</body>
+</html>`;
+
+fs.writeFileSync('public/check-options.html', html);
+console.log('check-options.html created');

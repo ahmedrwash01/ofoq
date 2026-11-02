@@ -7,3 +7,4 @@ for (let i = 1; i <= 8; i++) {
     console.log(`nasia-asset-${i}.webp: ${(stat.size / 1024).toFixed(1)} KB`);
   }
 }
+
