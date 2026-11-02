@@ -2,6 +2,7 @@ import { useLanguage } from '../context/useLanguage.js';
 import { useInquiry } from '../context/useInquiry.js';
 import { ContactCta } from '../components/sections/ContactCta.jsx';
 import { Container, SurfacePanel, TechnicalLabel, Button } from '../components/ui/index.js';
+import { SOCIAL_LINKS } from '../content/socialLinks.jsx';
 
 export function ContactPage() {
   const { lang, t, isRtl } = useLanguage();
@@ -192,6 +193,130 @@ export function ContactPage() {
                 </div>
               </SurfacePanel>
             ))}
+          </div>
+        </Container>
+      </section>
+
+      {/* Official Social Media Channels Section */}
+      <section style={{ padding: 'clamp(1rem, 3vw, 2.5rem) 0' }}>
+        <Container>
+          <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+            <TechnicalLabel variant="gold">
+              {isRtl ? 'قنواتنا على السوشيال ميديا' : 'OFFICIAL SOCIAL NETWORK'}
+            </TechnicalLabel>
+            <h2
+              style={{
+                fontSize: 'clamp(1.75rem, 3.5vw, 2.5rem)',
+                fontWeight: 800,
+                color: 'var(--text-primary)',
+                margin: '0.75rem 0 0.5rem',
+              }}
+            >
+              {isRtl ? 'تابع أحدث إطلاقاتنا وأعمالنا الهندسية' : 'Follow Our Engineering Journey & Releases'}
+            </h2>
+            <p style={{ color: 'var(--text-secondary)', fontSize: 'var(--text-sm)', margin: 0, maxWidth: '640px', marginInline: 'auto' }}>
+              {isRtl
+                ? 'انضم إلى مجتمعنا وتابع كواليس بناء المنتجات الرقمية، إطلاقات المتاجر، والتحديثات التقنية عبر حساباتنا المعتمدة.'
+                : 'Join our community to explore behind-the-scenes engineering, store releases, and technical architecture tips.'}
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))',
+              gap: '1.5rem',
+            }}
+          >
+            {SOCIAL_LINKS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <SurfacePanel
+                  key={item.id}
+                  style={{
+                    padding: '2rem',
+                    background: 'var(--bg-surface)',
+                    border: '1px solid var(--border-default)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '1.25rem',
+                    position: 'relative',
+                    overflow: 'hidden',
+                  }}
+                >
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+                    <div
+                      style={{
+                        width: '48px',
+                        height: '48px',
+                        borderRadius: '12px',
+                        background: 'rgba(255, 255, 255, 0.05)',
+                        border: '1px solid var(--border-subtle)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: item.color,
+                      }}
+                    >
+                      <Icon width="24" height="24" />
+                    </div>
+                    <span
+                      style={{
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '11px',
+                        color: 'var(--text-muted)',
+                      }}
+                    >
+                      {item.handle}
+                    </span>
+                  </div>
+
+                  <div>
+                    <h3 style={{ fontSize: 'var(--text-lg)', fontWeight: 800, color: 'var(--text-primary)', margin: '0 0 0.4rem 0' }}>
+                      {isRtl ? item.nameAr : item.name}
+                    </h3>
+                    <p style={{ fontSize: 'var(--text-xs)', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
+                      {isRtl ? item.descAr : item.descEn}
+                    </p>
+                  </div>
+
+                  <div style={{ marginTop: 'auto', paddingTop: '0.5rem' }}>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="focus-ring"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.5rem',
+                        width: '100%',
+                        fontSize: 'var(--text-xs)',
+                        fontWeight: 600,
+                        color: '#fff',
+                        padding: '0.65rem 1rem',
+                        borderRadius: 'var(--radius-sm)',
+                        background: 'rgba(255, 255, 255, 0.06)',
+                        border: '1px solid var(--border-default)',
+                        textDecoration: 'none',
+                        transition: 'all var(--duration-fast)',
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.background = item.color;
+                        e.currentTarget.style.borderColor = item.color;
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.06)';
+                        e.currentTarget.style.borderColor = 'var(--border-default)';
+                      }}
+                    >
+                      <span>{isRtl ? `متابعة على ${item.nameAr} ↗` : `Follow on ${item.name} ↗`}</span>
+                    </a>
+                  </div>
+                </SurfacePanel>
+              );
+            })}
           </div>
         </Container>
       </section>

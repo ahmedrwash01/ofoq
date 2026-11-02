@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/useLanguage.js';
 import { Container, OfoqLogo, Divider } from '../ui/index.js';
+import { SOCIAL_LINKS } from '../../content/socialLinks.jsx';
 
 export function Footer() {
   const { lang, t, isRtl } = useLanguage();
@@ -121,6 +122,56 @@ export function Footer() {
               <span style={{ color: 'var(--text-muted)' }}>
                 {t('contact.locationDesc')}
               </span>
+
+              {/* Verified Social Media Channels */}
+              <div style={{ marginTop: '0.5rem', paddingTop: '0.75rem', borderTop: '1px solid var(--border-subtle)' }}>
+                <span style={{ fontSize: '11px', fontFamily: 'var(--font-mono)', color: 'var(--text-muted)', display: 'block', marginBottom: '0.5rem' }}>
+                  {isRtl ? 'حسابات التواصل الرسمية:' : 'OFFICIAL SOCIAL CHANNELS:'}
+                </span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  {SOCIAL_LINKS.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <a
+                        key={item.id}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={isRtl ? item.nameAr : item.name}
+                        title={`${isRtl ? item.nameAr : item.name} (${item.handle})`}
+                        className="focus-ring"
+                        style={{
+                          width: '36px',
+                          height: '36px',
+                          borderRadius: '8px',
+                          background: 'rgba(255, 255, 255, 0.05)',
+                          border: '1px solid var(--border-subtle)',
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          color: 'var(--text-secondary)',
+                          textDecoration: 'none',
+                          transition: 'all var(--duration-fast)',
+                        }}
+                        onMouseEnter={(e) => {
+                          e.currentTarget.style.color = '#fff';
+                          e.currentTarget.style.borderColor = item.color;
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.12)';
+                          e.currentTarget.style.transform = 'translateY(-2px)';
+                        }}
+                        onMouseLeave={(e) => {
+                          e.currentTarget.style.color = 'var(--text-secondary)';
+                          e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                          e.currentTarget.style.transform = 'translateY(0)';
+                        }}
+                      >
+                        <Icon width="18" height="18" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
