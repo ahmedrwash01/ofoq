@@ -27,8 +27,8 @@ export function ProjectsSection() {
       tagline: t('projects.nasiaTagline'),
       description: t('projects.nasiaChallenge'),
       solution: t('projects.nasiaSolution'),
-      image: '/assets/projects/nasya-user-screen-1.webp',
-      fallback: '/assets/projects/nasya-user-screen-1.webp',
+      image: '/assets/projects/nasya-delivery-screen-3.webp',
+      fallback: '/assets/projects/nasya-delivery-screen-3.webp',
       status: 'GOOGLE PLAY & WEB • PRODUCTION LIVE',
       statusVariant: 'emerald',
       floatingBadge1: isRtl ? '🛒 تطبيق عميل + تطبيق مندوب + منصة ويب' : '🛒 Tri-App Ecosystem (User, Courier, Web)',
@@ -60,8 +60,8 @@ export function ProjectsSection() {
       tagline: t('projects.springTagline'),
       description: t('projects.springChallenge'),
       solution: t('projects.springSolution'),
-      image: '/assets/projects/spring-customer-screen-1.png',
-      fallback: '/assets/projects/spring-customer-screen-1.png',
+      image: '/assets/projects/spring-map-screen.png',
+      fallback: '/assets/projects/spring-map-screen.png',
       status: 'APPLE APP STORE • VERIFIED APPS',
       statusVariant: 'cyan',
       floatingBadge1: isRtl ? ' معتمد على Apple App Store' : ' Live on Apple App Store',
@@ -128,7 +128,9 @@ export function ProjectsSection() {
       description: t('projects.moviqDesc'),
       challenge: t('projects.moviqChallenge'),
       solution: t('projects.moviqSolution'),
-      image: '/assets/projects/moviq-driver-screen-1.webp',
+      image: '/assets/projects/moviq-map-screen.png',
+      imageFit: 'cover',
+      imagePosition: 'center top',
       status: 'LOGISTICS & DISPATCH • LIVE',
       statusVariant: 'cyan',
       highlight: isRtl ? '📦 معالجة آلاف الشحنات • إثبات تسليم رقمي' : '📦 Thousands of Deliveries • Digital Proof',
@@ -157,7 +159,9 @@ export function ProjectsSection() {
       description: t('projects.drivoDesc'),
       challenge: t('projects.drivoChallenge'),
       solution: t('projects.drivoSolution'),
-      image: '/assets/projects/drivo-screen-1.png',
+      image: '/assets/projects/drivo-hero.png',
+      imageFit: 'contain',
+      imagePosition: 'center',
       status: 'SMART MOBILITY • WEB & APP',
       statusVariant: 'emerald',
       highlight: isRtl ? '🚗 رحلات مدن • سفر محافظات • مشاركة سيارات' : '🚗 City Commutes • Carpool • Intercity',
@@ -186,7 +190,9 @@ export function ProjectsSection() {
       description: t('projects.se7atyDesc'),
       challenge: t('projects.se7atyChallenge'),
       solution: t('projects.se7atySolution'),
-      image: '/assets/projects/se7aty-screen-3.png',
+      image: '/assets/projects/se7aty-app-ui-1.png',
+      imageFit: 'contain',
+      imagePosition: 'center',
       status: 'DIGITAL HEALTHCARE • ACTIVE',
       statusVariant: 'gold',
       highlight: isRtl ? '💊 تذكير أدوية دقيق • متابعة عائلية هادئة' : '💊 Exact Medication Alarms • Family Care',
@@ -407,17 +413,20 @@ export function ProjectsSection() {
                       style={{
                         width: '100%',
                         height: '100%',
-                        objectFit: 'cover',
-                        objectPosition: 'center top',
+                        objectFit: item.imageFit || 'cover',
+                        objectPosition: item.imagePosition || 'center top',
+                        padding: item.imageFit === 'contain' ? '10px' : '0',
                       }}
                     />
-                    <div
-                      style={{
-                        position: 'absolute',
-                        inset: 0,
-                        background: 'linear-gradient(to top, rgba(23, 36, 64, 0.9) 0%, transparent 70%)',
-                      }}
-                    />
+                    {item.imageFit !== 'contain' && (
+                      <div
+                        style={{
+                          position: 'absolute',
+                          inset: 0,
+                          background: 'linear-gradient(to top, rgba(23, 36, 64, 0.9) 0%, transparent 70%)',
+                        }}
+                      />
+                    )}
                   </div>
                 )}
 

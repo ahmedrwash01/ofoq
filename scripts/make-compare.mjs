@@ -1,0 +1,67 @@
+import fs from 'fs';
+
+// Let's create an html file to preview Nasya, Moviq, Se7aty, Drivo screens side-by-side
+const html = `<!DOCTYPE html>
+<html>
+<body style="background:#111; color:#fff; display:flex; flex-wrap:wrap; gap:20px; font-family:sans-serif; padding:20px;">
+  <div>
+    <h3>nasya-user-screen-1</h3>
+    <img src="/assets/projects/nasya-user-screen-1.webp" style="height:350px;" />
+  </div>
+  <div>
+    <h3>nasya-user-screen-2</h3>
+    <img src="/assets/projects/nasya-user-screen-2.webp" style="height:350px;" />
+  </div>
+  <div>
+    <h3>nasya-user-screen-3</h3>
+    <img src="/assets/projects/nasya-user-screen-3.webp" style="height:350px;" />
+  </div>
+  <div>
+    <h3>nasya-delivery-screen-1</h3>
+    <img src="/assets/projects/nasya-delivery-screen-1.webp" style="height:350px;" />
+  </div>
+  <div>
+    <h3>nasya-delivery-screen-3</h3>
+    <img src="/assets/projects/nasya-delivery-screen-3.webp" style="height:350px;" />
+  </div>
+  <div>
+    <h3>nasia-marketing-mockup</h3>
+    <img src="/assets/projects/nasia-marketing-mockup.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>spring-map-screen</h3>
+    <img src="/assets/projects/spring-map-screen.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>spring-ride-options</h3>
+    <img src="/assets/projects/spring-ride-options.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>drivo-ui-1</h3>
+    <img src="/assets/projects/drivo-ui-1.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>drivo-ui-2</h3>
+    <img src="/assets/projects/drivo-ui-2.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>se7aty-app-ui-1</h3>
+    <img src="/assets/projects/se7aty-app-ui-1.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>se7aty-mockup</h3>
+    <img src="/assets/projects/se7aty-mockup.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>moviq-trips-screen</h3>
+    <img src="/assets/projects/moviq-trips-screen.png" style="height:350px;" />
+  </div>
+  <div>
+    <h3>moviq-map-screen</h3>
+    <img src="/assets/projects/moviq-map-screen.png" style="height:350px;" />
+  </div>
+</body>
+</html>`;
+
+fs.writeFileSync('public/compare.html', html);
+console.log('compare.html created');

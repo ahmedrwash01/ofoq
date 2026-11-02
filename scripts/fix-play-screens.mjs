@@ -63,3 +63,4 @@ async function run() {
   await getPlayScreens('info.moviq.driver', 'moviq-driver');
 }
 run();
+

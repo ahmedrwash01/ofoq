@@ -19,3 +19,4 @@ async function testPlayStore(pkg) {
 }
 
 testPlayStore('com.fassladev.nasyaUser');
+

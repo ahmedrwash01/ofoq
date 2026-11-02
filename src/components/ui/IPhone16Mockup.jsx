@@ -11,8 +11,6 @@ export function IPhone16Mockup({
   className = '',
   style = {},
 }) {
-  const webpSrc = typeof src === 'string' ? src.replace(/\.(png|jpg|jpeg)$/i, '.webp') : null;
-
   return (
     <div
       className={`ofoq-iphone16-mockup ${className}`.trim()}
@@ -152,23 +150,20 @@ export function IPhone16Mockup({
           </div>
         </div>
 
-        {/* Live Screenshot Picture */}
-        <picture>
-          {webpSrc && <source srcSet={webpSrc} type="image/webp" />}
-          <img
-            src={src}
-            alt={alt || title}
-            loading="eager"
-            decoding="async"
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: 'center top',
-              display: 'block',
-            }}
-          />
-        </picture>
+        {/* Live Screenshot */}
+        <img
+          src={src}
+          alt={alt || title}
+          loading="eager"
+          decoding="async"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            objectPosition: 'center top',
+            display: 'block',
+          }}
+        />
 
         {/* Specular Diagonal Glass Glare */}
         <div
@@ -200,4 +195,3 @@ export function IPhone16Mockup({
     </div>
   );
 }
-

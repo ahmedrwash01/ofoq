@@ -45,3 +45,4 @@ async function run() {
   await getPrecisePlayScreens('info.moviq.driver', 'moviq-driver');
 }
 run();
+
