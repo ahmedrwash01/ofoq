@@ -20,3 +20,4 @@ async function run() {
   await checkAlts('com.oryxinvestmentsegypt.oryx');
 }
 run();
+

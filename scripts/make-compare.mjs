@@ -65,3 +65,4 @@ const html = `<!DOCTYPE html>
 
 fs.writeFileSync('public/compare.html', html);
 console.log('compare.html created');
+

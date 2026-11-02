@@ -20,3 +20,4 @@ async function run() {
   await inspectPlayScreens('com.fassladev.nasyaDelivery');
 }
 run();
+

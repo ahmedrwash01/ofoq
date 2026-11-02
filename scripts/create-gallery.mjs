@@ -33,3 +33,4 @@ let html = `<!DOCTYPE html>
 
 fs.writeFileSync('public/preview-gallery.html', html);
 console.log('Created public/preview-gallery.html with', files.length, 'images');
+

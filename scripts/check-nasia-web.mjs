@@ -9,3 +9,4 @@ async function checkNasiaWeb() {
   console.log('Nasia Web images:', imgs);
 }
 checkNasiaWeb();
+

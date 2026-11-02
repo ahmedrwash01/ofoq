@@ -17,3 +17,4 @@ async function run() {
   await checkAppStoreScreens('https://apps.apple.com/eg/app/spring-driver/id6764071917');
 }
 run();
+

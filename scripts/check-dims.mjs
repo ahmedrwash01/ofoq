@@ -40,3 +40,4 @@ for (const f of list) {
     console.log(f.replace('public/assets/projects/', ''), getDimensions(f));
   }
 }
+
